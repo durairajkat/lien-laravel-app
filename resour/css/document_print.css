@@ -1,0 +1,14 @@
+html, body
+{
+    margin: auto;
+    padding: auto;
+}
+.noprint
+{
+    display:none;
+}
+.InputLine
+{
+    /*border: none;*/
+    margin-bottom:0px;
+}

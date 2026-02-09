@@ -1,0 +1,69 @@
+/**
+ * Universal styles
+ */
+@media (min-width: 1px) {
+    .vine .alert {
+        margin: 0 0 10px;
+    }
+
+    .vine-checkbox:before {
+        color: #999;
+    }
+
+    #remember-me {
+        line-height: 2.4em;
+        padding-left: 7px;
+    }
+}
+
+/**
+ * Phones, tablets
+ */
+@media (max-width: 1024px) {
+}
+
+/**
+ * Tablets, desktops
+ */
+@media (min-width: 768px) {
+    body.login {
+        background-color: #222;
+    }
+
+    #login-wrap {
+        background-color: #fff;
+        width: 30%;
+        max-width: 550px;
+        min-width: 300px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .vine-rounded #login-wrap {
+        border-radius: 5px;
+    }
+}
+
+/**
+ * Phones only
+ */
+@media (max-width: 767px) {
+}
+
+/**
+ * Small phones only
+ */
+@media (max-width: 480px) {
+}
+
+/**
+ * Tablets only
+ */
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/**
+ * Desktops only
+ */
+@media (min-width: 1025px) {
+}

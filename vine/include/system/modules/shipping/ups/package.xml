@@ -1,0 +1,24 @@
+<Package>
+
+    <PackagingType>
+        <Code></Code>
+        <Description></Description>
+    </PackagingType>
+
+    <Dimensions>
+        <UnitOfMeasurement>
+            <Code>IN</Code>
+        </UnitOfMeasurement>
+        <Length></Length>
+        <Width></Width>
+        <Height></Height>
+    </Dimensions>
+
+    <PackageWeight>
+        <UnitOfMeasurement>
+            <Code>LBS</Code>
+        </UnitOfMeasurement>
+        <Weight></Weight>
+    </PackageWeight>
+
+</Package>

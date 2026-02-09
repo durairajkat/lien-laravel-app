@@ -1,0 +1,118 @@
+.vine .button {
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-family: inherit;
+    cursor: pointer;
+    -webkit-appearance: none;
+    overflow: hidden;
+}
+
+/* (Firefox) Removes outline from buttons */
+.vine .button::-moz-focus-inner {
+  border: 0;
+}
+
+.vine .button:hover,
+.vine .button:focus {
+    border: 1px solid #bbb;
+    background-color: #eee;
+}
+
+.vine .button:active {
+    border-color: #aaa;
+    background-color: #eee;
+    -webkit-box-shadow: inset 0 1px 5px #ccc;
+    -moz-box-shadow: inset 0 1px 5px #ccc;
+    box-shadow: inset 0 1px 5px #ccc;
+}
+
+.vine .button.left {
+    text-align: center;
+    float: left;
+    margin-right: 15px;
+}
+
+.vine .button.right {
+    text-align: center;
+    float: right;
+    margin-left: 15px;
+}
+
+.vine .button.fixate {
+    border-color: #226491;
+    background-color: #378cd2;
+    color: #fff;
+}
+
+.vine .button.fixate:hover,
+.vine .button.fixate:focus {
+    background-color: #3282be;
+}
+
+.vine .button.fixate:active {
+    -webkit-box-shadow: inset 0 1px 5px #285f8c;
+    -moz-box-shadow: inset 0 1px 5px #285f8c;
+    box-shadow: inset 0 1px 5px #285f8c;
+}
+
+.vine .button.success {
+    border-color: #2d963c;
+    background-color: #3cb950;
+    color: #fff;
+}
+
+.vine .button.success:hover,
+.vine .button.success:focus {
+    background-color: #37aa4a;
+}
+
+.vine .button.success:active {
+    -webkit-box-shadow: inset 0 1px 5px #288737;
+    -moz-box-shadow: inset 0 1px 5px #288737;
+    box-shadow: inset 0 1px 5px #288737;
+}
+
+.vine .button.caution {
+    border-color: #e6a555;
+    background-color: #f5af5f;
+    color: #fff;
+}
+
+.vine .button.caution:hover,
+.vine .button.caution:focus {
+    border-color: #d28c46;
+    background-color: #eba055;
+}
+
+.vine .button.caution:active {
+    -webkit-box-shadow: inset 0 1px 5px #c88c46;
+    -moz-box-shadow: inset 0 1px 5px #c88c46;
+    box-shadow: inset 0 1px 5px #c88c46;
+}
+
+.vine .button.failure {
+    border-color: #c34646;
+    background-color: #eb5a5a;
+    color: #fff;
+}
+
+.vine .button.failure:hover,
+.vine .button.failure:focus {
+    background-color: #cd4646;
+    border-color: #962323;
+}
+
+.vine .button.failure:active {
+    -webkit-box-shadow: inset 0 1px 5px #a02d2d;
+    -moz-box-shadow: inset 0 1px 5px #a02d2d;
+    box-shadow: inset 0 1px 5px #a02d2d;
+}
+
+.vine-rounded .button {
+    border-radius: 4px;
+}

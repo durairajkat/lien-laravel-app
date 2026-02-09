@@ -1,0 +1,294 @@
+2020-06-06 20:46:21 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 20:47:59 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 20:48:40 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 20:51:08 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 20:52:35 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 20:55:55 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 20:55:59 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 21:05:50 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 21:16:09 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 21:32:52 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 22:28:19 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 23:10:51 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-06 23:10:52 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 00:26:19 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 00:26:19 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 00:26:20 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 00:26:20 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 00:26:20 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 00:26:20 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 01:50:00 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 01:51:06 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 02:35:16 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 02:41:28 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 03:30:42 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 04:49:28 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 05:00:06 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 09:04:17 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 09:04:17 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-06-07 12:15:08 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-08-27 21:00:49 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2020-08-27 21:02:05 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-01-13 21:31:50 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-01-13 21:32:02 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-01-13 21:32:03 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:51:15 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:51:15 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:51:15 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:55:47 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 13:55:47 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:55:47 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:55:47 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:55:47 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 13:55:47 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:55:47 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:55:47 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:55:47 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 13:55:47 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:55:47 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:55:47 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:56:56 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 13:56:56 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:56:56 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:56:56 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:56:56 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 13:56:56 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:56:56 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:56:56 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:56:56 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 13:56:56 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:56:56 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 13:56:56 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:01:49 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 14:01:49 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:01:49 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:01:49 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:01:49 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 14:01:49 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:01:49 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:01:49 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:01:49 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 14:01:49 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:01:49 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:01:49 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:03:46 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:03:46 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:03:46 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:42 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:42 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:42 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:44 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:44 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:44 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:44 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:44 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:44 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:44 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:44 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:04:44 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:12 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:12 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:12 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:13 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:13 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:13 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:37 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:37 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:37 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:38 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:38 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:38 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:38 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:38 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:06:38 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 14:52:17 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 588
+2021-08-21 14:52:17 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 588
+2021-08-21 14:52:17 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 588
+2021-08-21 14:52:34 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 588
+2021-08-21 14:52:34 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 588
+2021-08-21 14:52:34 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 588
+2021-08-21 14:54:12 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 588
+2021-08-21 14:54:12 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 588
+2021-08-21 14:54:12 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 588
+2021-08-21 14:56:34 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 14:56:34 [Warning] session_cache_limiter(): Cannot change cache limiter when headers already sent ~ {vine}/vine/session.php ~ line 109
+2021-08-21 14:56:34 [Warning] session_set_cookie_params(): Cannot change session cookie parameters when headers already sent ~ {vine}/vine/session.php ~ line 115
+2021-08-21 14:56:34 [Warning] session_start(): Cannot start session when headers already sent ~ {vine}/vine/session.php ~ line 460
+2021-08-21 14:56:35 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 14:56:35 [Warning] session_cache_limiter(): Cannot change cache limiter when headers already sent ~ {vine}/vine/session.php ~ line 109
+2021-08-21 14:56:35 [Warning] session_set_cookie_params(): Cannot change session cookie parameters when headers already sent ~ {vine}/vine/session.php ~ line 115
+2021-08-21 14:56:35 [Warning] session_start(): Cannot start session when headers already sent ~ {vine}/vine/session.php ~ line 460
+2021-08-21 14:56:35 [Warning] session_set_save_handler(): Cannot change save handler when headers already sent ~ {vine}/vine/session.php ~ line 99
+2021-08-21 14:56:35 [Warning] session_cache_limiter(): Cannot change cache limiter when headers already sent ~ {vine}/vine/session.php ~ line 109
+2021-08-21 14:56:35 [Warning] session_set_cookie_params(): Cannot change session cookie parameters when headers already sent ~ {vine}/vine/session.php ~ line 115
+2021-08-21 14:56:35 [Warning] session_start(): Cannot start session when headers already sent ~ {vine}/vine/session.php ~ line 460
+2021-08-21 15:07:43 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 15:07:43 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 15:07:43 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 15:08:01 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 15:08:01 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 15:08:01 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 15:08:03 [Notice] Undefined variable: _SESSION ~ {vine}/vine/session.php ~ line 236
+2021-08-21 15:08:03 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-08-21 15:08:03 [Notice] Trying to access array offset on value of type null ~ {vine}/vine/session.php ~ line 236
+2021-10-22 11:04:02 [Notice] Undefined variable: _SESSION ~ {vine}\vine\session.php ~ line 236
+2021-10-22 11:04:02 [Notice] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 236
+2021-10-22 11:04:02 [Notice] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 236
+2021-10-22 11:25:53 [Notice] Undefined variable: _SESSION ~ {vine}\vine\session.php ~ line 236
+2021-10-22 11:25:53 [Notice] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 236
+2021-10-22 11:25:53 [Notice] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 236
+2021-10-22 17:30:09 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-22 17:30:09 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-22 17:30:11 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-22 17:30:11 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-22 17:30:13 [Warning] include(/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-22 17:30:13 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 07:52:44 [Warning] require_once(/home/pssurs/dragocode/lien/public/index.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:44 [Fatal Error] require_once(): Failed opening required '/home/pssurs/dragocode/lien/public/index.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:46 [Warning] require_once(/home/pssurs/dragocode/lien/public/index.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:46 [Fatal Error] require_once(): Failed opening required '/home/pssurs/dragocode/lien/public/index.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:48 [Warning] require_once(/home/pssurs/dragocode/lien/public/index.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:48 [Fatal Error] require_once(): Failed opening required '/home/pssurs/dragocode/lien/public/index.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:50 [Warning] require_once(/home/pssurs/dragocode/lien/public/index.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:50 [Fatal Error] require_once(): Failed opening required '/home/pssurs/dragocode/lien/public/index.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:52 [Warning] require_once(/home/pssurs/dragocode/lien/public/index.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:52 [Fatal Error] require_once(): Failed opening required '/home/pssurs/dragocode/lien/public/index.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 07:52:54 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:52:54 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:52:56 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:52:56 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:52:58 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:52:58 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:00 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:00 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:02 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:02 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:04 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:04 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:06 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:06 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:08 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:08 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:10 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:10 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:12 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:12 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:14 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:14 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:16 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:16 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:17 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:17 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:29 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:29 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:37 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:53:37 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:01 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:01 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:03 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:03 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:06 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:06 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:11 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:11 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:53 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:53 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:55 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:55 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:56 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:56 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:57 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:57 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:57 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:55:57 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:38 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:38 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:42 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:42 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:44 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:44 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:49 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:49 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:50 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:56:50 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:19 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:19 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:22 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:22 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:23 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:23 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:23 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:23 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:24 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:24 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:24 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:24 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:56 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:57:56 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:59:14 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:59:14 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:59:15 [Warning] require(/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 07:59:15 [Fatal Error] require(): Failed opening required '/home/pssurs/dragocode/lien/public/../application/vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/public/index.php ~ line 34
+2021-10-24 08:11:50 [Warning] require_once(/home/pssurs/dragocode/lien/public/index.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 08:11:50 [Fatal Error] require_once(): Failed opening required '/home/pssurs/dragocode/lien/public/index.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 08:11:52 [Warning] require_once(/home/pssurs/dragocode/lien/public/index.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 08:11:52 [Fatal Error] require_once(): Failed opening required '/home/pssurs/dragocode/lien/public/index.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 08:11:54 [Warning] require_once(/home/pssurs/dragocode/lien/public/index.php): failed to open stream: No such file or directory ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 08:11:54 [Fatal Error] require_once(): Failed opening required '/home/pssurs/dragocode/lien/public/index.php' (include_path='.:/opt/alt/php74/usr/share/pear') ~ /home/pssurs/dragocode/lien/server.php ~ line 22
+2021-10-24 08:24:18 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:18 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:20 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:20 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:22 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:22 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:24 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:24 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:26 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:26 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:28 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:24:28 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:31:59 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:31:59 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:01 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:01 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:03 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:03 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:05 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:05 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:07 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:07 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:09 [Warning] include(/home/pssurs/dragocode/lien/app/Http/Kernel.php): failed to open stream: No such file or directory ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2021-10-24 08:32:09 [Warning] include(): Failed opening '/home/pssurs/dragocode/lien/vendor/composer/../../app/Http/Kernel.php' for inclusion (include_path='.:/opt/alt/php74/usr/share/pear') ~ {include}/libraries/Composer/composer/ClassLoader.php ~ line 444
+2026-02-09 06:45:20 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:45:20 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:45:20 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:47:40 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:47:40 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:47:40 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:47:44 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:47:44 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:47:44 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:24 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:24 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:24 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:27 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:27 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:27 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:56 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:56 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:56 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:56 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:56 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:52:56 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:55:48 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:55:48 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:55:48 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:55:48 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:55:48 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:55:48 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:57:17 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:57:17 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:57:17 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:57:17 [Warning] Undefined variable $_SESSION ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:57:17 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471
+2026-02-09 06:57:17 [Warning] Trying to access array offset on value of type null ~ {vine}\vine\session.php ~ line 471

@@ -1,0 +1,200 @@
+.vine .clear:after { display: block; visibility: hidden; clear: both; height: 0; content: ' '; font-size: 0; }
+* html .vine .clear { zoom: 1; }
+*:first-child+html .vine .clear { zoom: 1; }
+
+.vine .cloak,
+.vine .cloaked,
+.vine .conceal,
+.vine .invisible {
+    opacity: 0;                                                       /* Good browsers */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0);                                         /* IE 5-7 */
+    -moz-opacity: 0;                                                  /* Netscape */
+    -khtml-opacity: 0;                                                /* Safari 1.x */
+}
+
+.vine .bb,
+.vine .bb * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.vine .strip {
+    list-style: none;
+    list-style-image: none;
+    text-align: left;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    line-height: 1;
+    background: none;
+    background-image: none;
+}
+
+.vine .flow             { margin-top: 15px !important; }
+.vine .halt             { margin-top: 0 !important; }
+.vine .hide             { display: none; }
+.vine .text-left        { text-align: left; }
+.vine .text-center      { text-align: center; }
+.vine .text-right       { text-align: right; }
+.vine .clickable        { cursor: pointer; }
+
+.vine .size-less   { font-size: 0.9em; }
+.vine .size-less-1 { font-size: 0.9em; }
+.vine .size-less-2 { font-size: 0.8em; }
+.vine .size-less-3 { font-size: 0.7em; }
+.vine .size-more   { font-size: 1.1em; }
+.vine .size-more-1 { font-size: 1.1em; }
+.vine .size-more-2 { font-size: 1.2em; }
+.vine .size-more-3 { font-size: 1.3em; }
+.vine .size-1      { font-size: 11px; }
+.vine .size-2      { font-size: 12px; }
+.vine .size-3      { font-size: 13px; }
+.vine .size-4      { font-size: 16px; }
+.vine .size-5      { font-size: 20px; }
+.vine .size-6      { font-size: 24px; }
+
+.vine .h1 { font-size: 1.75em; font-weight: bold; }
+.vine .h2 { font-size: 1.60em; font-weight: bold; }
+.vine .h3 { font-size: 1.45em; font-weight: bold; }
+.vine .h4 { font-size: 1.30em; font-weight: bold; }
+.vine .h5 { font-size: 1.15em; font-weight: bold; }
+.vine .h6 { font-size: 1.00em; font-weight: bold; }
+
+.vine img.full { max-width: 100%; }
+
+.vine hr           { background-color: #ccc; }
+.vine .line-top    { border-top: 1px solid #ccc; padding-top: 15px; }
+.vine .line-bottom { border-bottom: 1px solid #ccc; padding-bottom: 15px; }
+.vine .circle      { border-radius: 50%; text-align: center; }
+.vine .ellipsis    { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.vine .no-underline          { text-decoration: none; }
+.vine .hover-underline:hover { text-decoration: underline; }
+
+.vine-small .h1,
+.vine-small .h2,
+.vine-small .h3,
+.vine-small .h4,
+.vine-small .h5,
+.vine-small .h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.vine .zone               { overflow: hidden; border: 1px solid #ccc; }
+.vine .zone-head          { margin: 0; padding: 12px 15px; border-bottom: 1px solid #ccc; color: #000; font-weight: bold; }
+.vine .zone-head span     { float: right; font-weight: normal; }
+.vine-rounded .zone       { border-radius: 4px; }
+.vine-rounded .zone-head  { border-radius: 3px 3px 0 0; }
+.vine-rounded img.rounded { border-radius: 4px; }
+
+
+#vine-size-small  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+#vine-size-medium { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+.vine .lg-hide    { display: none !important; }
+
+/**
+ * Phones only
+ */
+@media (max-width: 767px) {
+    #vine-size-small  { display: block; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    #vine-size-medium { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    #vine-size-large  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+
+    .vine .sm-hide        { display: none !important; }
+    .vine .sm-text-left   { text-align: left; }
+    .vine .sm-text-center { text-align: center; }
+    .vine .sm-text-right  { text-align: right; }
+    .vine .sm-size-less   { font-size: 0.9em; }
+    .vine .sm-size-less-1 { font-size: 0.9em; }
+    .vine .sm-size-less-2 { font-size: 0.8em; }
+    .vine .sm-size-less-3 { font-size: 0.7em; }
+    .vine .sm-size-more   { font-size: 1.1em; }
+    .vine .sm-size-more-1 { font-size: 1.1em; }
+    .vine .sm-size-more-2 { font-size: 1.2em; }
+    .vine .sm-size-more-3 { font-size: 1.3em; }
+    .vine .sm-size-1      { font-size: 11px; }
+    .vine .sm-size-2      { font-size: 12px; }
+    .vine .sm-size-3      { font-size: 13px; }
+    .vine .sm-size-4      { font-size: 16px; }
+    .vine .sm-size-5      { font-size: 20px; }
+    .vine .sm-size-6      { font-size: 24px; }
+}
+
+/**
+ * Small phones only
+ */
+@media (max-width: 480px) {
+}
+
+/**
+ * Phones, tablets
+ */
+@media (max-width: 1024px) {
+}
+
+/**
+ * Tablets only
+ */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #vine-size-small  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    #vine-size-medium { display: block; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    #vine-size-large  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    .vine .md-hide    { display: none !important; }
+}
+
+/**
+ * Tablets, desktops
+ */
+@media (min-width: 768px) {
+    .vine .md-text-left   { text-align: left; }
+    .vine .md-text-center { text-align: center; }
+    .vine .md-text-right  { text-align: right; }
+    .vine .md-size-less   { font-size: 0.9em; }
+    .vine .md-size-less-1 { font-size: 0.9em; }
+    .vine .md-size-less-2 { font-size: 0.8em; }
+    .vine .md-size-less-3 { font-size: 0.7em; }
+    .vine .md-size-more   { font-size: 1.1em; }
+    .vine .md-size-more-1 { font-size: 1.1em; }
+    .vine .md-size-more-2 { font-size: 1.2em; }
+    .vine .md-size-more-3 { font-size: 1.3em; }
+    .vine .md-size-1      { font-size: 11px; }
+    .vine .md-size-2      { font-size: 12px; }
+    .vine .md-size-3      { font-size: 13px; }
+    .vine .md-size-4      { font-size: 16px; }
+    .vine .md-size-5      { font-size: 20px; }
+    .vine .md-size-6      { font-size: 24px; }
+}
+
+/**
+ * Desktops only
+ */
+@media (min-width: 1025px) {
+    #vine-size-small  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    #vine-size-medium { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    #vine-size-large  { display: block; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+
+    .vine .lg-hide        { display: none !important; }
+    .vine .lg-text-left   { text-align: left; }
+    .vine .lg-text-center { text-align: center; }
+    .vine .lg-text-right  { text-align: right; }
+    .vine .lg-size-less   { font-size: 0.9em; }
+    .vine .lg-size-less-1 { font-size: 0.9em; }
+    .vine .lg-size-less-2 { font-size: 0.8em; }
+    .vine .lg-size-less-3 { font-size: 0.7em; }
+    .vine .lg-size-more   { font-size: 1.1em; }
+    .vine .lg-size-more-1 { font-size: 1.1em; }
+    .vine .lg-size-more-2 { font-size: 1.2em; }
+    .vine .lg-size-more-3 { font-size: 1.3em; }
+    .vine .lg-size-1      { font-size: 11px; }
+    .vine .lg-size-2      { font-size: 12px; }
+    .vine .lg-size-3      { font-size: 13px; }
+    .vine .lg-size-4      { font-size: 16px; }
+    .vine .lg-size-5      { font-size: 20px; }
+    .vine .lg-size-6      { font-size: 24px; }
+}

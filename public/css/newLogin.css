@@ -1,0 +1,115 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	color:#535353;
+}
+
+td {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+#loginContainer th {
+    text-align: left;
+}
+input.button
+{
+	background-color:#0358B7;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:11px;
+	cursor:pointer;
+    margin-right: 19px;
+}
+/*input[type="text"], input[type="password"]
+{
+border-right: 3px solid #dfdfdf;
+border-left: 1px solid #dfdfdf;
+width: 180px;
+height: 20px;
+}*/
+select {
+width: 186px;
+height: 20px;
+}
+.header
+{
+background:url('/images/header_bg.jpg') repeat-x left top;
+height:136px;
+}
+.head
+{
+width:1000px;
+padding:inherit;
+margin: auto;
+}
+.content
+{
+width:1000px;
+padding:inherit;
+margin: auto;
+margin-bottom:10px;
+
+}
+.c_left
+{
+width:332px;
+float:left;
+padding:10px;
+min-height:300px;
+padding-top:10%;
+}
+.login
+{
+border:1px solid #B9B9B9;
+background:#ebebeb;
+padding:20px;
+}
+.submit
+{
+border:none;
+width:120px;
+height:40px;
+}
+/*
+#loginBtn.submit
+{
+background:url(/images/login.png) no-repeat;
+}
+*/
+.c_right
+{
+width:620px;
+float:left;
+padding:10px;
+min-height:300px;
+padding-top:10%;
+}
+
+.footer
+{
+background:url('/images/header_bg.jpg') repeat left top;
+height:154px;
+}
+.footer1
+{
+/*width:1200px;*/
+padding:inherit;
+margin: auto;
+height:154px;
+position:relative;
+}
+.copyright{position: absolute; color: #fff; left: 0; right: 0; top:10px; bottom: 0; text-align: center;}
+
+
+.align-center{text-align: center;}
+.custom-head{margin-bottom: 40px;}
+.grey-section{background: #F0F0F0; height: 70px; margin-bottom: 5px; padding-top: 15px;}
+.grey-section h3{margin: 0; padding: 10px 0 0; text-align: center; font-weight: bold; font-size: 16px;}
+.footer1 img{width: 100%;}
+.ph-no{color: #192240; font-size: 18px;}
+.info-txt p{font-size: 13px; color: #333;}
+.login{margin: 25px 0;}

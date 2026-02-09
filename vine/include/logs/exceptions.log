@@ -1,0 +1,2112 @@
+Date: 2020-06-06 20:46:21
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: could not find driver
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 20:47:59
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: could not find driver
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 20:48:40
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: could not find driver
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 20:51:08
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: could not find driver
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 20:52:35
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 20:55:55
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 20:55:59
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 21:05:50
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 21:16:09
+Host: 172.104.108.109
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 21:32:52
+Host: 101.206.210.27
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 22:28:19
+Host: 177.72.112.125
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 23:10:51
+Host: 190.128.154.222
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-06 23:10:52
+Host: 190.128.154.222
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 00:26:19
+Host: 44.225.84.206
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 00:26:19
+Host: 44.225.84.206
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 00:26:20
+Host: 44.225.84.206
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 00:26:20
+Host: 44.225.84.206
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 00:26:20
+Host: 44.225.84.206
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 00:26:20
+Host: 44.225.84.206
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 01:50:00
+Host: 193.118.53.210
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 01:51:06
+Host: 159.65.206.10
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 02:35:16
+Host: 84.38.186.78
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 02:41:28
+Host: 209.17.96.146
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 03:30:42
+Host: 139.99.141.237
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 04:49:28
+Host: 83.97.20.31
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 05:00:06
+Host: 193.70.33.60
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 09:04:17
+Host: 195.54.160.135
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 09:04:17
+Host: 195.54.160.135
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-06-07 12:15:08
+Host: 62.173.147.118
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-08-27 21:00:49
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2020-08-27 21:02:05
+Host: 54.95.115.125
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2021-01-13 21:31:50
+Host: 72.255.43.92
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2021-01-13 21:32:02
+Host: 212.47.244.68
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2021-01-13 21:32:03
+Host: 212.47.244.68
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /var/www/html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds2019')
+#1 /var/www/html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /var/www/html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /var/www/html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /var/www/html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /var/www/html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /var/www/html/vine/include/system/vine.php(351): require('/var/www/html/v...')
+#7 /var/www/html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/var/www/html/v...')
+#8 /var/www/html/vine/include/bootstrap.php(31): Vine::start('/var/www/html/v...', '/var/www/html/v...')
+#9 /var/www/html/index.php(20): require_once('/var/www/html/v...')
+#10 {main}
+================================================================================
+Date: 2021-02-05 03:47:23
+Host: 167.71.224.146
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [1045] Access denied for user 'nlb_user'@'localhost' (using password: YES)
+--
+#0 /home/customer/www/caseym19.sg-host.com/public_html/vine/include/system/vine/db.php(114): PDO->__construct('mysql:dbname=nl...', 'nlb_user', 'Slynerds!2019')
+#1 /home/customer/www/caseym19.sg-host.com/public_html/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/customer/www/caseym19.sg-host.com/public_html/vine/include/system/vine/session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 /home/customer/www/caseym19.sg-host.com/public_html/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/customer/www/caseym19.sg-host.com/public_html/vine/include/system/vine/session.php(146): Vine_Session->__construct(Array)
+#5 /home/customer/www/caseym19.sg-host.com/public_html/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/customer/www/caseym19.sg-host.com/public_html/vine/include/system/vine.php(351): require('/home/customer/...')
+#7 /home/customer/www/caseym19.sg-host.com/public_html/vine/include/system/vine.php(121): Vine::loadRegistry(Array, '/home/customer/...')
+#8 /home/customer/www/caseym19.sg-host.com/public_html/vine/include/bootstrap.php(31): Vine::start('/home/customer/...', '/home/customer/...')
+#9 /home/customer/www/caseym19.sg-host.com/public_html/index.php(20): require_once('/home/customer/...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 13:51:15
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 13:55:47
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(22): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 13:55:47
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(22): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 13:55:47
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(22): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 13:56:56
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(22): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 13:56:56
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(22): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 13:56:56
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(22): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:01:49
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(22): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:01:49
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(22): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:01:49
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(22): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:03:46
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:04:42
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:04:44
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:04:44
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:04:44
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:06:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:06:13
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:06:37
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:06:38
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:06:38
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: SQLSTATE[HY000] [2002] Connection refused
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 14:48:54
+Host: 127.0.0.1
+Type: Error
+File: {include}/bootstrap.php
+Line: 51
+Message: Class 'Dotenv\Dotenv' not found
+--
+#0 /home/paul/Code/lien/server.php(21): require_once()
+#1 {main}
+================================================================================
+Date: 2021-08-21 14:52:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#4 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#5 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#6 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#7 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#8 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#9 {main}
+================================================================================
+Date: 2021-08-21 14:52:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 158
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(158): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(581): Vine_Db->fetch()
+#2 [internal function]: Vine_Session->_read()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(460): session_start()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(119): Vine_Session->_start()
+#5 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#6 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#7 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#8 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#9 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#10 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#11 {main}
+================================================================================
+Date: 2021-08-21 14:52:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(612): Vine_Db->query()
+#2 [internal function]: Vine_Session->_write()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(131): session_write_close()
+#4 [internal function]: Vine_Session->__destruct()
+#5 {main}
+================================================================================
+Date: 2021-08-21 14:52:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#4 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#5 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#6 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#7 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#8 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#9 {main}
+================================================================================
+Date: 2021-08-21 14:52:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 158
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(158): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(581): Vine_Db->fetch()
+#2 [internal function]: Vine_Session->_read()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(460): session_start()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(119): Vine_Session->_start()
+#5 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#6 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#7 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#8 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#9 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#10 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#11 {main}
+================================================================================
+Date: 2021-08-21 14:52:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(612): Vine_Db->query()
+#2 [internal function]: Vine_Session->_write()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(131): session_write_close()
+#4 [internal function]: Vine_Session->__destruct()
+#5 {main}
+================================================================================
+Date: 2021-08-21 14:52:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#4 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#5 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#6 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#7 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#8 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#9 {main}
+================================================================================
+Date: 2021-08-21 14:52:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 158
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(158): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(581): Vine_Db->fetch()
+#2 [internal function]: Vine_Session->_read()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(460): session_start()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(119): Vine_Session->_start()
+#5 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#6 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#7 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#8 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#9 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#10 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#11 {main}
+================================================================================
+Date: 2021-08-21 14:52:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(612): Vine_Db->query()
+#2 [internal function]: Vine_Session->_write()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(131): session_write_close()
+#4 [internal function]: Vine_Session->__destruct()
+#5 {main}
+================================================================================
+Date: 2021-08-21 14:52:34
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#4 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#5 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#6 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#7 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#8 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#9 {main}
+================================================================================
+Date: 2021-08-21 14:52:34
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 158
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(158): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(581): Vine_Db->fetch()
+#2 [internal function]: Vine_Session->_read()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(460): session_start()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(119): Vine_Session->_start()
+#5 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#6 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#7 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#8 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#9 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#10 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#11 {main}
+================================================================================
+Date: 2021-08-21 14:52:34
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(612): Vine_Db->query()
+#2 [internal function]: Vine_Session->_write()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(131): session_write_close()
+#4 [internal function]: Vine_Session->__destruct()
+#5 {main}
+================================================================================
+Date: 2021-08-21 14:52:34
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#4 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#5 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#6 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#7 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#8 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#9 {main}
+================================================================================
+Date: 2021-08-21 14:52:34
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 158
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(158): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(581): Vine_Db->fetch()
+#2 [internal function]: Vine_Session->_read()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(460): session_start()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(119): Vine_Session->_start()
+#5 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#6 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#7 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#8 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#9 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#10 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#11 {main}
+================================================================================
+Date: 2021-08-21 14:52:34
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(612): Vine_Db->query()
+#2 [internal function]: Vine_Session->_write()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(131): session_write_close()
+#4 [internal function]: Vine_Session->__destruct()
+#5 {main}
+================================================================================
+Date: 2021-08-21 14:52:34
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#4 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#5 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#6 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#7 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#8 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#9 {main}
+================================================================================
+Date: 2021-08-21 14:52:34
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 158
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(158): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(581): Vine_Db->fetch()
+#2 [internal function]: Vine_Session->_read()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(460): session_start()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(119): Vine_Session->_start()
+#5 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#6 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#7 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#8 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#9 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#10 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#11 {main}
+================================================================================
+Date: 2021-08-21 14:52:34
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(612): Vine_Db->query()
+#2 [internal function]: Vine_Session->_write()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(131): session_write_close()
+#4 [internal function]: Vine_Session->__destruct()
+#5 {main}
+================================================================================
+Date: 2021-08-21 14:54:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#4 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#5 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#6 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#7 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#8 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#9 {main}
+================================================================================
+Date: 2021-08-21 14:54:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 158
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(158): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(581): Vine_Db->fetch()
+#2 [internal function]: Vine_Session->_read()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(460): session_start()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(119): Vine_Session->_start()
+#5 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#6 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#7 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#8 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#9 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#10 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#11 {main}
+================================================================================
+Date: 2021-08-21 14:54:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(612): Vine_Db->query()
+#2 [internal function]: Vine_Session->_write()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(131): session_write_close()
+#4 [internal function]: Vine_Session->__destruct()
+#5 {main}
+================================================================================
+Date: 2021-08-21 14:54:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#4 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#5 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#6 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#7 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#8 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#9 {main}
+================================================================================
+Date: 2021-08-21 14:54:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 158
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(158): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(581): Vine_Db->fetch()
+#2 [internal function]: Vine_Session->_read()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(460): session_start()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(119): Vine_Session->_start()
+#5 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#6 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#7 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#8 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#9 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#10 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#11 {main}
+================================================================================
+Date: 2021-08-21 14:54:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(612): Vine_Db->query()
+#2 [internal function]: Vine_Session->_write()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(131): session_write_close()
+#4 [internal function]: Vine_Session->__destruct()
+#5 {main}
+================================================================================
+Date: 2021-08-21 14:54:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#4 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#5 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#6 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#7 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#8 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#9 {main}
+================================================================================
+Date: 2021-08-21 14:54:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 158
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(158): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(581): Vine_Db->fetch()
+#2 [internal function]: Vine_Session->_read()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(460): session_start()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(119): Vine_Session->_start()
+#5 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#6 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#7 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#8 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#9 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#10 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#11 {main}
+================================================================================
+Date: 2021-08-21 14:54:12
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 455
+Message: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(455): PDOStatement->execute()
+#1 /home/paul/Code/lien/vine/include/system/vine/session.php(612): Vine_Db->query()
+#2 [internal function]: Vine_Session->_write()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(131): session_write_close()
+#4 [internal function]: Vine_Session->__destruct()
+#5 {main}
+================================================================================
+Date: 2021-08-21 15:07:43
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: could not find driver
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 15:08:01
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: could not find driver
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-08-21 15:08:03
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}/vine/db.php
+Line: 114
+Message: could not find driver
+--
+#0 /home/paul/Code/lien/vine/include/system/vine/db.php(114): PDO->__construct()
+#1 /home/paul/Code/lien/vine/include/system/vine/db.php(440): Vine_Db->connect()
+#2 /home/paul/Code/lien/vine/include/system/vine/session.php(501): Vine_Db->query()
+#3 /home/paul/Code/lien/vine/include/system/vine/session.php(104): Vine_Session->_createTable()
+#4 /home/paul/Code/lien/vine/include/system/vine/session.php(146): Vine_Session->__construct()
+#5 /home/paul/Code/lien/vine/include/system/registry.php(33): Vine_Session::getInstance()
+#6 /home/paul/Code/lien/vine/include/system/vine.php(351): require('/home/paul/Code...')
+#7 /home/paul/Code/lien/vine/include/system/vine.php(121): Vine::loadRegistry()
+#8 /home/paul/Code/lien/vine/include/bootstrap.php(31): Vine::start()
+#9 /home/paul/Code/lien/server.php(21): require_once('/home/paul/Code...')
+#10 {main}
+================================================================================
+Date: 2021-10-22 11:04:02
+Host: ::1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 114
+Message: SQLSTATE[HY000] [1049] Unknown database 'lien_vien'
+--
+#0 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\db.php(114): PDO->__construct('mysql:dbname=li...', 'root', '')
+#1 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\db.php(440): Vine_Db->connect()
+#2 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\session.php(104): Vine_Session->_createTable()
+#4 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\session.php(146): Vine_Session->__construct(Array)
+#5 C:\xampp7.4\htdocs\lien\application\vine\include\system\registry.php(33): Vine_Session::getInstance()
+#6 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine.php(351): require('C:\\xampp7.4\\htd...')
+#7 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine.php(121): Vine::loadRegistry(Array, 'C:\\xampp7.4\\htd...')
+#8 C:\xampp7.4\htdocs\lien\application\vine\include\bootstrap.php(31): Vine::start('C:\\xampp7.4\\htd...', 'C:\\xampp7.4\\htd...')
+#9 C:\xampp7.4\htdocs\lien\application\server.php(21): require_once('C:\\xampp7.4\\htd...')
+#10 {main}
+================================================================================
+Date: 2021-10-22 11:25:53
+Host: ::1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 114
+Message: could not find driver
+--
+#0 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\db.php(114): PDO->__construct(':dbname=lien_vi...', 'root', '')
+#1 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\db.php(440): Vine_Db->connect()
+#2 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\session.php(501): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\session.php(104): Vine_Session->_createTable()
+#4 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine\session.php(146): Vine_Session->__construct(Array)
+#5 C:\xampp7.4\htdocs\lien\application\vine\include\system\registry.php(33): Vine_Session::getInstance()
+#6 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine.php(351): require('C:\\xampp7.4\\htd...')
+#7 C:\xampp7.4\htdocs\lien\application\vine\include\system\vine.php(121): Vine::loadRegistry(Array, 'C:\\xampp7.4\\htd...')
+#8 C:\xampp7.4\htdocs\lien\application\vine\include\bootstrap.php(31): Vine::start('C:\\xampp7.4\\htd...', 'C:\\xampp7.4\\htd...')
+#9 C:\xampp7.4\htdocs\lien\application\server.php(21): require_once('C:\\xampp7.4\\htd...')
+#10 {main}
+================================================================================
+Date: 2021-10-22 17:30:09
+Host: 79.101.133.184
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-22 17:30:11
+Host: 79.101.133.184
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-22 17:30:13
+Host: 79.101.133.184
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:24:18
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:24:20
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:24:22
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:24:24
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:24:26
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:24:28
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:31:59
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:32:01
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:32:03
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:32:05
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:32:07
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2021-10-24 08:32:09
+Host: 79.101.216.67
+Type: Illuminate\Contracts\Container\BindingResolutionException
+File: /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php
+Line: 875
+Message: Target class [App\Http\Kernel] does not exist.
+--
+#0 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#1 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#2 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(294): Illuminate\Foundation\Application->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(869): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(754): Illuminate\Container\Container->build(Object(Closure))
+#5 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\Container\Container->resolve('Illuminate\\Cont...', Array, true)
+#6 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Container/Container.php(692): Illuminate\Foundation\Application->resolve('Illuminate\\Cont...', Array)
+#7 /home/pssurs/dragocode/lien/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(826): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /home/pssurs/dragocode/lien/public/index.php(49): Illuminate\Foundation\Application->make('Illuminate\\Cont...')
+#9 /home/pssurs/dragocode/lien/server.php(22): require_once('/home/pssurs/dr...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:45:20
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: SQLSTATE[HY000] [1045] Access denied for user 'lienmana_session'@'localhost' (using password: YES)
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct('mysql:dbname=li...', 'lienmana_sessio...', 'azsammartinruse...')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:47:40
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: SQLSTATE[HY000] [1045] Access denied for user 'lienmana_session'@'localhost' (using password: YES)
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct('mysql:dbname=li...', 'lienmana_sessio...', 'azsammartinruse...')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:47:44
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: SQLSTATE[HY000] [1045] Access denied for user 'lienmana_session'@'localhost' (using password: YES)
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct('mysql:dbname=li...', 'lienmana_sessio...', 'azsammartinruse...')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:52:24
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: SQLSTATE[HY000] [1045] Access denied for user 'lienmana_session'@'localhost' (using password: YES)
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct('mysql:dbname=li...', 'lienmana_sessio...', 'azsammartinruse...')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:52:27
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: SQLSTATE[HY000] [1045] Access denied for user 'lienmana_session'@'localhost' (using password: YES)
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct('mysql:dbname=li...', 'lienmana_sessio...', 'azsammartinruse...')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:52:56
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: SQLSTATE[HY000] [1045] Access denied for user 'lienmana_session'@'localhost' (using password: YES)
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct('mysql:dbname=li...', 'lienmana_sessio...', 'azsammartinruse...')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:52:56
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: SQLSTATE[HY000] [1045] Access denied for user 'lienmana_session'@'localhost' (using password: YES)
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct('mysql:dbname=li...', 'lienmana_sessio...', 'azsammartinruse...')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:55:48
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: SQLSTATE[HY000] [1045] Access denied for user 'lienmana_session'@'localhost' (using password: YES)
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct('mysql:dbname=li...', 'lienmana_sessio...', 'azsammartinruse...')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:55:48
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: SQLSTATE[HY000] [1045] Access denied for user 'lienmana_session'@'localhost' (using password: YES)
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct('mysql:dbname=li...', 'lienmana_sessio...', 'azsammartinruse...')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:57:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: could not find driver
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct(':dbname=;host=', '', '')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================
+Date: 2026-02-09 06:57:17
+Host: 127.0.0.1
+Type: PDOException
+File: {vine}\vine\db.php
+Line: 227
+Message: could not find driver
+--
+#0 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(227): PDO->__construct(':dbname=;host=', '', '')
+#1 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\db.php(879): Vine_Db->connect()
+#2 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(1001): Vine_Db->query('CREATE TABLE IF...')
+#3 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(207): Vine_Session->_createTable()
+#4 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine\session.php(291): Vine_Session->__construct(Array)
+#5 C:\xampp\htdocs\Lapp\lien\vine\include\system\registry.php(65): Vine_Session::getInstance()
+#6 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(701): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\Lapp\lien\vine\include\system\vine.php(241): Vine::loadRegistry(Array, 'C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Lapp\lien\vine\include\bootstrap.php(61): Vine::start('C:\\xampp\\htdocs...', 'C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\Lapp\lien\server.php(20): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+================================================================================

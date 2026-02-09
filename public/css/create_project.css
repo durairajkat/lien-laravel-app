@@ -1,0 +1,1019 @@
+/* animations for progress bar */
+@keyframes step1{
+    from{width:0%;}
+    to{width:33%;}
+}
+@keyframes step2{
+    from{width:25%;}
+    to{width:66%;}
+}
+@keyframes step3{
+    from{width:50%;}
+    to{width:100%;}
+}
+
+@keyframes step-detailed1{
+    from{width:0%;}
+    to{width:16.6666666667%;}
+}
+@keyframes step-detailed2{
+    from{width:16.6666666667%;}
+    to{width:33.3333333333%;}
+}
+@keyframes step-detailed3{
+    from{width:33.3333333333%;}
+    to{width:50%;}
+}
+@keyframes step-detailed4{
+    from{width:50%;}
+    to{width:66.6666666667%;}
+}
+@keyframes step-detailed5{
+    from{width:66.6666666667%;}
+    to{width:83.3333333333%;}
+}
+@keyframes step-detailed6{
+    from{width:83.3333333333%;}
+    to{width:100%;}
+}
+
+/* Create a Project Header and Progress Bar */
+
+.project-header h1{
+    color:#1084ff; /* Blue used throughout NLB */
+    text-align: center;
+    font-weight:700;
+    margin-top:0;
+    font-size:20pt;
+}
+/* .progress is the full length gray bar, .progress-bar is the blue bar */
+.project-header .progress{
+    width:60%;
+    margin:2% auto;
+    background-color:#c7cac9;
+    height:25px;
+    border-radius:10px;
+}
+
+.project-header .progress-bar{
+    background-color:#1084ff;
+}
+.project-header .progress-bar--step1{
+    animation: step1 2s ease-out 0s forwards;
+}
+.project-header .progress-bar--step2{
+    animation: step2 2s ease-out 0s forwards;
+}
+.project-header .progress-bar--step3{
+    animation: step3 300ms ease-out forwards;
+}
+.project-header .progress-bar--step4{
+    animation: step4 300ms ease-out forwards;
+}
+
+.project-header .progress-bar--step1--detailed{
+    animation: step-detailed1 2s ease-out 0s forwards;
+}
+.project-header .progress-bar--step2--detailed{
+    animation: step-detailed2 2s ease-out 0s forwards;
+}
+.project-header .progress-bar--step3--detailed{
+    animation: step-detailed3 2s ease-out 0s forwards;
+}
+.project-header .progress-bar--step4--detailed{
+    animation: step-detailed4 2s ease-out 0s forwards;
+}
+.project-header .progress-bar--step5--detailed{
+    animation: step-detailed5 2s ease-out 0s forwards;
+}
+.project-header .progress-bar--step6--detailed{
+    animation: step-detailed6 2s ease-out 0s forwards;
+}
+
+/* Create a Project Form */
+/* Modify existing .border-table class*/
+.border-table{
+    margin:2% auto;
+}
+.create-project-form{
+    width:50%;
+    display:block;
+    margin:2% auto;
+    background:#fff;
+    box-shadow:5px 9px 16px rgba(0,0,0,.16);
+    border-radius:5px;
+    padding:30px;
+    overflow-x: hidden;
+    position: relative;
+    text-align: left;
+}
+.create-project-form--wide{
+    width:100%;
+    padding:0;
+}
+.create-project-form--wide .row{
+    margin-left:0;
+    margin-right:0;
+}
+.create-project-form-header{
+    width:100%;
+    background-color:#1084ff;
+    position:absolute;
+    top:0;
+    left:0;
+    height:40px;
+    z-index: 10;
+}
+.create-project-form-header h2{
+    font-size:16pt;
+    color:#fff;
+    text-align: left;
+    margin:2px 0 2px 30px;
+    transform:translateY(40%);
+}
+.create-project-form label{
+    display:block;
+    color:#1084ff;
+    font-weight:500;
+}
+.create-project-form input[type="text"], .create-project-form input[type="number"], .create-project-form select, input:disabled, .create-project-form textarea, .create-project-form .chosen-container-active .chosen-choices, .create-project-form .chosen-container-multi .chosen-choices{
+    box-shadow: inset 0 0 10px rgba(0,0,0,.2);
+    border:1px solid #c7cac9;
+    transition-duration: 300ms;
+    color:#333;
+}
+.create-project-form .radio-label{
+    color:#111111;
+}
+.create-project-form .push-30{
+    margin-left:15px;
+}
+.create-project-form input[type="radio"]{
+
+}
+
+.project-create-continue{
+    min-width:40%;
+    height:40px;
+    padding:10px;
+    border-radius:5px;
+    background-color:#1084ff;
+    display:inline-block;
+    color:#fff;
+    text-align: center;
+    font-weight:700;
+    box-shadow:5px 9px 16px rgba(0,0,0,.16);
+    margin:40px auto;
+    float:right;
+    transition-duration: 300ms;
+}
+
+.project-create-skip{
+    min-width:40%;
+    height:40px;
+    padding:10px;
+    border-radius:5px;
+    background-color:#f0f0f0;
+    display:inline-block;
+    color:#363636;
+    text-align: center;
+    font-weight:700;
+    box-shadow:5px 9px 16px rgba(0,0,0,.16);
+    margin:5% auto;
+    float:right;
+    transition-duration: 300ms;
+    margin-left: 10px;
+}
+
+
+.project-save-quit{
+    width:30%;
+    height:40px;
+    padding:10px;
+    border-radius:5px;
+    background-color:#00b894;
+    display:inline-block;
+    color:#fff;
+    text-align: center;
+    font-weight:700;
+    box-shadow:5px 9px 16px rgba(0,0,0,.16);
+    margin:5% auto;
+    float:left;
+    transition-duration: 500ms;
+}
+
+.project-create-continue:hover{
+    color:#fff;
+    background-color:#004a98;
+    background-blend-mode: darken;
+    box-shadow: inset 0 0 25px  #003165;
+}
+.project-save-quit:hover{
+    color:#fff;
+    background-color:#006350;
+    background-blend-mode: darken;
+    box-shadow: inset 0 0 25px #004134;
+}
+.project-save-quit--terms, .project-create-continue--terms{
+    min-width:200px;
+    float:right;
+}
+.project-save-quit--terms{
+    width:200px;
+    margin-left: 20px;
+}
+.project-create-continue--left{
+    min-width:200px;
+    float:left;
+}
+.detailed-link{
+    display:block;
+    text-align: center;
+    text-decoration: underline;
+    color:rgba(0,0,0,.5);
+    margin:10px auto;
+    font-size:10pt;
+}
+
+.create-project-form .dateBreak{
+    margin: 2% auto;
+    border-bottom:none;
+    width:100%;
+}
+.create-project-form .dateBreak .col-md-12, .no-pad{
+    padding:0;
+}
+
+.dropdown-menu  {
+    width: 215px;
+}
+.create-project-form .multiple{
+    height:34px;
+    margin-bottom:10px;
+    padding: 6px 12px;
+}
+.create-project-form .deadlines{
+    margin-top:20px;
+    font-weight: 700;
+    padding:5px 15px;
+}
+
+.create-project-form .deadlines .prelim-date{
+    text-align: left;
+}
+.deadlines:nth-of-type(even){
+    background-color: #dadada;
+    border-bottom:1px solid rgba(0,0,0,.1);
+}
+.deadlines .col-md-6{
+    padding:0;
+}
+.create-project-form .deadlines .prelim-date--late{
+    color: #d63031;
+}
+.prelim-date{
+    font-weight:700;
+}
+.prelim-date--late{
+    color: #d63031;
+}
+/*Job Info Sheet Accordion Styles*/
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    border-radius:10px;
+}
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius:10px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius:10px;
+}
+
+input:checked + .slider {
+  background-color: #00b894;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.expand{
+    width:auto;
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+.expand label{
+    display:inline-block;
+}
+.expand h4{
+    margin:0px 5px;
+    padding:0;
+    font-size:.8em;
+    color:#fff;
+    display:inline-block;
+    transform:translateY(-90%);
+}
+.job-info-accordion{
+    background-color: #e5e5e5;
+    color: #444;
+    cursor: pointer;
+    padding: 18px 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size:1.2em;
+    font-weight:700;
+    border-bottom:1px solid #a2a2a2;
+}
+.job-info-accordion--top-margin{
+    margin-top:40px;
+}
+.job-info-active, .job-info-accordion:hover {
+    background-color: #ccc;
+}
+.job-info-panel{
+    padding: 20px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+.job-info-down{
+    float:right;
+}
+.job-info-panel label{
+    font-weight:700;
+    display:inline-block;
+    width:23%;
+}
+.job-info-panel .job-info-panel--label label{
+    font-weight:700;
+    width:100%;
+    margin-bottom:0px;
+}
+.job-info-panel .job-info-panel--label .label-light{
+    font-weight:500;
+}
+.job-info-panel .job-info-panel--label input[type="text"]{
+    float:none;
+    width:100%;
+}
+.job-info-panel input[type="text"], .job-info-panel-input-wrapper--select select{
+    border:none;
+    border-bottom:1px solid #c7cac9;
+    box-shadow:none;
+    background-color:transparent;
+    width:75%;
+    float:right;
+}
+.job-info-input input[type="text"]{
+    border:none;
+    border-bottom:1px solid #c7cac9;
+    box-shadow:none;
+    background-color:transparent;
+    width:100%;
+}
+.job-info-panel input:disabled{
+    border-bottom:1px solid #c7cac9;
+    box-shadow:none;
+    background-color:transparent;
+}
+.job-info-panel-input-wrapper{
+    width:100%;
+    margin:2% auto;
+    /*height:20px;*/
+}
+.terms label{
+    color:#222;
+    margin-bottom:10px;
+}
+
+.create-project-form .dateBreak .col-md-12 .deadlines--large{
+    padding:10px 20px;
+}
+
+/* Add focused states to inputs for accessability */
+
+.create-project-form input[type="text"]:focus, .create-project-form select:focus, .create-project-form textarea:focus{
+    box-shadow: inset 0 0 10px rgba(0,0,0,.2);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    border:1px solid rgba(0,0,0,.5);
+    outline:none;
+}
+.project-create-continue:focus{
+    color:#fff;
+    background-color:#004a98;
+    background-blend-mode: darken;
+    box-shadow: inset 0 0 25px  #003165;
+    text-decoration: none;
+}
+.project-save-quit:focus{
+    color:#fff;
+    background-color:#006350;
+    background-blend-mode: darken;
+    box-shadow: inset 0 0 25px #004134;
+    text-decoration: none;
+}
+.create-button--contract{
+    width:20%;
+    min-width:20%;
+    margin:5% 2%;
+}
+
+.contract--wrapper{
+    margin:25px auto;
+    width:100%;
+    padding-bottom:30px;
+    border-bottom:1px solid rgba(0,0,0,.15);
+}
+.contract--wrapper--wide{
+    margin:50px auto 0px;
+    border-bottom:none;
+    padding-bottom:0;
+}
+.create-project-form .panel, .create-project-form .panel-info{
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    border:none;
+}
+.create-project-form--large{
+    width:75%;
+}
+.create-project-form--large .create-button--contract{
+    margin:0 2%;
+    min-width:20%;
+}
+
+.project-tasks{
+    width:100%;
+    padding:10px 30px;
+}
+.project-tasks-heading{
+    padding: 0;
+}
+.project-tasks label{
+    display:block;
+}
+.project-tasks input[type="text"], .project-tasks select{
+    width:100%;
+    display:block;
+    margin:20px auto;
+}
+.project-tasks-input--half-wrap{
+    width:45%;
+    display:inline-block;
+}
+.project-tasks-input--half-wrap:first-of-type{
+    margin-right:9.5%;
+}
+.project-create-continue--small{
+    width:auto;
+    min-width:20%;
+    margin-left:30px;
+    margin:20px 15px;
+}
+.create-project-form--project-overview{
+    width:90%;
+    margin:2% auto;
+}
+.project-overview-h3{
+    font-size:1em;
+    font-weight:700;
+    margin-top:10px;
+}
+.project-overview-button{
+    width:32%;
+    display:inline-block;
+    border:none;
+    color:#fff;
+    height:30px;
+    text-align: center;
+    font-weight:700;
+    padding-top:5px;
+    margin:20px auto;
+    border-radius:5px;
+    box-shadow:5px 9px 16px rgba(0,0,0,.16);
+    transition-duration: 300ms;
+}
+.project-overview-button--blue{
+    background-color:#1084ff;
+}
+.project-overview-button--green{
+    background-color:#00b894;
+}
+.project-overview-button--red{
+    background-color:#d63031;
+}
+.project-overview-button--dark{
+    background-color:#2d3436;
+}
+.project-overview-button:hover, .project-overview-button:focus{
+    background-blend-mode: darken;
+    box-shadow: inset 0 0 25px rgba(0,0,0,.4);
+    text-decoration:none;
+    color:#fff;
+    outline:none;
+}
+.project-overview-wrapper{
+    width:90%;
+    margin:0 auto;
+}
+.project-overview-esacpe-link{
+    display:block;
+    color:rgba(0,0,0,.5);
+    margin:20px auto;
+    text-align: center;
+    text-decoration: underline;
+    border:none;
+    background:transparent;
+}
+.user-preferences{
+    width:80%;
+    margin:10px auto;
+    text-align: center;
+}
+.user-preferences input[type="checkbox"], .user-preferences label{
+    display:inline-block;
+    padding-top:0;
+    margin-top:0;
+    vertical-align: middle;
+}
+.user-preferences label{
+    color:#636e72;
+    transform:translateY(50%);
+}
+.user-preferences input[type="checkbox"]{
+    vertical-align: middle;
+    transform:translateY(55%);
+}
+
+.addNew:hover{
+    cursor: pointer;
+
+}
+.project-details-wrapper{
+    width:80%;
+    margin:5% auto;
+}
+.tab-content > .border-table--project-details{
+    padding:0;
+    border:none;
+    border-radius:0;
+    margin:0 auto;
+}
+.view-type{
+    display:block;
+    width:100%;
+    background:rgba(0,0,0,0);
+    font-size:1em;
+    padding:10px 15px;
+    min-height:20px;
+    font-size:14pt;
+    border-bottom:1px solid rgba(0,0,0,.2);
+    text-align: left;
+}
+.view-type:first-of-type{
+    margin-top:20px;
+}
+.view-type--sidebar{
+    padding:10px 0;
+}
+.view-type h3{
+    display:inline-block;
+    font-size:14pt;
+    margin:0;
+    font-weight:700;
+}
+.view-type a{
+    font-size:1.4em;
+    color:#fff;
+}
+.view-type:last-of-type{
+    border-bottom:none;
+}
+.view-type--smaller-font{
+    font-size:medium;
+}
+.tab-wrapper{
+    width:95%;
+    padding:10px;
+    margin:0 auto;
+}
+.main-tab-sec{
+    margin-top:0;
+}
+.create-project-form .dateBreak--margin{
+    margin:0 auto;
+}
+.menu--gray{
+    background:rgba(0,0,0,.1);
+    border-bottom:1px solid rgba(0,0,0,.2);
+}
+
+
+.select-view{
+    position:absolute;
+    right:0;
+    top:0;
+    z-index: 11;
+}
+.select-view a{
+    color:#fff;
+    font-size:12pt;
+    padding:5px 12px;
+}
+.select-view .nav-tabs{
+    border-bottom:none;
+}
+.select-view .nav-tabs>li>a{
+    min-height:40px;
+    border-radius:0;
+    padding:5px 10px;
+}
+.create-project-form .main-tab-menu .nav-tabs > li.active > a{
+    background:#00b894;
+}
+.create-project-form .tab-area ul.nav-tabs > li{
+    background:none;
+}
+.task-padding .form-control{
+    padding: 6px 12px;
+}
+.main-tab-menu ul.nav-tabs > li{
+    font-size: 12pt;
+}
+.nav-tabs>li>a{
+    margin-right:0;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: #dfe6e9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: underline;
+    font-size: 25px;
+    color: #535353;
+    display: block;
+    transition: 0.3s;
+    font-size:12pt;
+}
+.sidenav h3{
+    padding:8px 8px 8px 32px;
+    color:#1084ff;
+}
+
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+.sidenav a:focus{
+    color:#1084ff;
+    text-decoration: underline;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.mobile-nav--menu{
+    position: absolute;
+    right:10px;
+    top:3px;
+    color:#fff;
+    font-size: 18pt;
+}
+.active-mobile{
+    font-weight:700;
+    color:#1084ff;
+}
+.options-wrapper{
+    text-align: center;
+    float:right;
+}
+.search-img{
+    transform:translateY(20%);
+    height:30px;
+    border-radius:3px;
+}
+.project-table-header-button{
+    font-size:10pt;
+    height:30px;
+    padding:5px 10px;
+    background-color:#1084ff;
+    border-radius:3px;
+    display:inline-block;
+    color:#fff;
+    text-align: center;
+    font-weight:700;
+    margin:0 10px;
+    float:left;
+    transition-duration: 300ms;
+    transform:translateY(20%);
+}
+.project-table-header-claim{
+    font-size:10pt;
+    height:30px;
+    padding:5px 10px;
+    display:inline-block;
+    text-align: center;
+    font-weight:700;
+    margin:0 10px;
+    float:left;
+    transition-duration: 300ms;
+    transform:translateY(60%);
+}
+.project-table-header-button:hover, .project-table-header-button:focus{
+    color:#fff;
+    background-color:#004a98;
+    background-blend-mode: darken;
+    box-shadow: inset 0 0 25px  #003165;
+    text-decoration: none;
+}
+.activeCases{
+    text-decoration: underline;
+}
+.contract--wrapper--med{
+    width:50%;
+    margin:0 auto;
+}
+.search-filters .form-control{
+    width:auto;
+}
+.search-filters{
+    margin:0 auto;
+}
+
+.project-details-wrapper .collapse{
+    display:block;
+}
+.edit-link-wrapper{
+    width:100%;
+    text-align: center;
+}
+.project-save-quit--view-button{
+    float:none;
+    margin: 2% auto;
+    border:none;
+}
+.project-button-blue{
+    background-color:#1084ff;
+    min-width:20%;
+}
+.float-right{
+    float:right;
+}
+.project-red-cancel{
+    /*background:#d63031;*/
+    width:20%;
+}
+#sort-projects:hover{
+    cursor: pointer;
+}
+#sortModal{
+    padding:20px;
+}
+.form-no-padding{
+    padding:0;
+}
+.form-padding-wrapper{
+    padding:30px;
+}
+.edit-nav{
+    margin-top:40px;
+}
+.create-project-form--edit{
+    width:90%;
+    margin:0 auto 50px;
+}
+.create-project-form--edit .tab-content-body{
+    width:80%;
+    margin:0 auto;
+    padding-top:0;
+    text-align: left;
+}
+.match-width{
+    width:80%;
+    padding:0;
+    margin:0 auto;
+}
+.status-wrapper{
+    width:80%;
+    margin:0 auto;
+}
+.status-wrapper h4{
+    color:#1084ff;
+}
+.toggle-status{
+    min-width: 20%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1084ff;
+    display: inline-block;
+    color: #fff;
+    border:none;
+    text-align: center;
+    font-weight: 700;
+    box-shadow: 5px 9px 16px rgba(0,0,0,.16);
+    margin: 20px auto;
+    transition-duration: 300ms;
+}
+.toggle-status:hover{
+    color:#fff;
+    background-color:#004a98;
+    background-blend-mode: darken;
+    box-shadow: inset 0 0 25px  #003165;
+}
+.container--edit{
+    width:100%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.deadline-remedy {
+        padding: 10px 0;
+}
+.mobile-overview h4, .mobile-overview h3{
+    padding:0 0 0 32px;
+    font-size:10pt;
+    margin-top:0px;
+}
+tr:nth-child(even) {
+    background: #dadada;
+    border: 0px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/* Media Queries */
+
+@media screen and (max-width: 1198px){
+    .create-project-form{
+        width:100%;
+    }
+    .container{
+        width:100%;
+    }
+    .table-responsive{
+        border:none;
+    }
+}
+@media screen and (max-width: 1020px){
+    .job-info-panel label{
+        width:30%;
+    }
+    .job-info-panel input[type="text"], .job-info-panel-input-wrapper--select select{
+        width:70%;
+    }
+}
+@media screen and (max-width: 860px){
+    .main-tab-menu ul.nav-tabs > li{
+        float:none;
+        width:30%;
+
+    }
+}
+@media screen and (max-width: 800px){
+    .mobile--button--wide{
+        width:200px;
+    }
+    .user-preferences{
+        width:90%;
+    }
+    .contract--wrapper--med{
+        width:90%;
+    }
+}
+@media screen and (max-width: 935px){
+    .mobile--button--wide{
+        width:60%;
+        float:none;
+        display:block;
+        margin:2% auto;
+    }
+}
+@media screen and (max-width: 785px){
+    .project-tasks-input--half-wrap{
+        width:100%;
+        display:block;
+    }
+    .activecasesTab, .allcasesTab{
+        text-align: center;
+    }
+    .create-project-form--edit .tab-content-body, .match-width{
+        width:90%;
+    }
+}
+@media screen and (max-width: 600px){
+    .main-tab-menu ul.nav-tabs > li{
+        float:left;
+        width:50%;
+        display:inline-block;
+
+    }
+    .nav-tabs>li>a{
+        margin-right:0;
+    }
+    [align="right"], .table--mobile{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 550px){
+    .create-project-form-header h2, .job-info-accordion{
+        font-size:12pt;
+    }
+    .project-details-wrapper{
+        width:95%;
+    }
+    .project-details-wrapper .form-control{
+        width:96%;
+        margin:2% auto;
+    }
+    .project-details-wrapper .form-control--mobilewidth, .project-details-wrapper select{
+        width:100%;
+    }
+    .project-overview-button{
+        width:100%;
+    }
+    .project-overview-button--mobile{
+        width:32%;
+    }
+}
+@media screen and (max-width: 535px){
+    .job-info-panel label, .job-info-panel input[type="text"], .job-info-panel-input-wrapper--select select{
+        display:block;
+        width:100%;
+        float:none;
+    }
+    .job-info-panel-input-wrapper{
+        height:auto;
+    }
+}
+@media screen and (max-width: 500px){
+    .project-create-continue, .project-save-quit{
+        float:none;
+        display:block;
+        width:100%;
+    }
+    .project-header .progress{
+    width:100%;
+    }
+    .project-create-continue--small{
+        width:95%;
+        margin:20px auto;
+    }
+    .contract--wrapper--med{
+        width:100%;
+    }
+    .create-button--contract{
+        margin:5% auto;
+    }
+}
+@media screen and (max-width: 450px){
+    .expand{
+        display:none;
+    }
+}

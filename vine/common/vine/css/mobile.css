@@ -1,0 +1,104 @@
+.vine-responsive  #vine-size-small  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+.vine-responsive  #vine-size-medium { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+.vine.vine-responsive .lg-hide { display: block !important; }
+
+/**
+ * Phones only
+ */
+@media (max-width: 767px) {
+    .vine-responsive #vine-size-small  { display: block; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    .vine-responsive #vine-size-medium { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    .vine-responsive #vine-size-large  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+
+    .vine.vine-responsive .sm-hide        { display: none !important; }
+    .vine.vine-responsive .sm-text-left   { text-align: left; }
+    .vine.vine-responsive .sm-text-center { text-align: center; }
+    .vine.vine-responsive .sm-text-right  { text-align: right; }
+    .vine.vine-responsive .sm-size-less   { font-size: 0.9em; }
+    .vine.vine-responsive .sm-size-less-1 { font-size: 0.9em; }
+    .vine.vine-responsive .sm-size-less-2 { font-size: 0.8em; }
+    .vine.vine-responsive .sm-size-less-3 { font-size: 0.7em; }
+    .vine.vine-responsive .sm-size-more   { font-size: 1.1em; }
+    .vine.vine-responsive .sm-size-more-1 { font-size: 1.1em; }
+    .vine.vine-responsive .sm-size-more-2 { font-size: 1.2em; }
+    .vine.vine-responsive .sm-size-more-3 { font-size: 1.3em; }
+    .vine.vine-responsive .sm-size-1      { font-size: 11px; }
+    .vine.vine-responsive .sm-size-2      { font-size: 12px; }
+    .vine.vine-responsive .sm-size-3      { font-size: 13px; }
+    .vine.vine-responsive .sm-size-4      { font-size: 16px; }
+    .vine.vine-responsive .sm-size-5      { font-size: 20px; }
+    .vine.vine-responsive .sm-size-6      { font-size: 24px; }
+}
+
+/**
+ * Small phones only
+ */
+@media (max-width: 480px) {
+}
+
+/**
+ * Phones, tablets
+ */
+@media (max-width: 1024px) {
+}
+
+/**
+ * Tablets only
+ */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .vine-responsive #vine-size-small  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    .vine-responsive #vine-size-medium { display: block; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    .vine-responsive #vine-size-large  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    .vine.vine-responsive .md-hide    { display: none !important; }
+}
+
+/**
+ * Tablets, desktops
+ */
+@media (min-width: 768px) {
+    .vine.vine-responsive .md-text-left   { text-align: left; }
+    .vine.vine-responsive .md-text-center { text-align: center; }
+    .vine.vine-responsive .md-text-right  { text-align: right; }
+    .vine.vine-responsive .md-size-less   { font-size: 0.9em; }
+    .vine.vine-responsive .md-size-less-1 { font-size: 0.9em; }
+    .vine.vine-responsive .md-size-less-2 { font-size: 0.8em; }
+    .vine.vine-responsive .md-size-less-3 { font-size: 0.7em; }
+    .vine.vine-responsive .md-size-more   { font-size: 1.1em; }
+    .vine.vine-responsive .md-size-more-1 { font-size: 1.1em; }
+    .vine.vine-responsive .md-size-more-2 { font-size: 1.2em; }
+    .vine.vine-responsive .md-size-more-3 { font-size: 1.3em; }
+    .vine.vine-responsive .md-size-1      { font-size: 11px; }
+    .vine.vine-responsive .md-size-2      { font-size: 12px; }
+    .vine.vine-responsive .md-size-3      { font-size: 13px; }
+    .vine.vine-responsive .md-size-4      { font-size: 16px; }
+    .vine.vine-responsive .md-size-5      { font-size: 20px; }
+    .vine.vine-responsive .md-size-6      { font-size: 24px; }
+}
+
+/**
+ * Desktops only
+ */
+@media (min-width: 1025px) {
+    .vine-responsive #vine-size-small  { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    .vine-responsive #vine-size-medium { display: none; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+    .vine-responsive #vine-size-large  { display: block; width: 1px; height: 1px; position: absolute; bottom: 0; left: 0; }
+
+    .vine.vine-responsive .lg-hide        { display: none !important; }
+    .vine.vine-responsive .lg-text-left   { text-align: left; }
+    .vine.vine-responsive .lg-text-center { text-align: center; }
+    .vine.vine-responsive .lg-text-right  { text-align: right; }
+    .vine.vine-responsive .lg-size-less   { font-size: 0.9em; }
+    .vine.vine-responsive .lg-size-less-1 { font-size: 0.9em; }
+    .vine.vine-responsive .lg-size-less-2 { font-size: 0.8em; }
+    .vine.vine-responsive .lg-size-less-3 { font-size: 0.7em; }
+    .vine.vine-responsive .lg-size-more   { font-size: 1.1em; }
+    .vine.vine-responsive .lg-size-more-1 { font-size: 1.1em; }
+    .vine.vine-responsive .lg-size-more-2 { font-size: 1.2em; }
+    .vine.vine-responsive .lg-size-more-3 { font-size: 1.3em; }
+    .vine.vine-responsive .lg-size-1      { font-size: 11px; }
+    .vine.vine-responsive .lg-size-2      { font-size: 12px; }
+    .vine.vine-responsive .lg-size-3      { font-size: 13px; }
+    .vine.vine-responsive .lg-size-4      { font-size: 16px; }
+    .vine.vine-responsive .lg-size-5      { font-size: 20px; }
+    .vine.vine-responsive .lg-size-6      { font-size: 24px; }
+}

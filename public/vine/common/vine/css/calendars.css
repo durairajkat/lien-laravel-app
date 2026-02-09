@@ -1,0 +1,190 @@
+.vine-calendar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    display: none;
+    z-index: 9998;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.vine-calendar.vine-medium,
+.vine-calendar.vine-large {
+    width: 350px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.vine-rounded .vine-calendar.vine-medium,
+.vine-rounded .vine-calendar.vine-large {
+    border-radius: 5px;
+}
+
+.vine-calendar.vine-small {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.vine-calendar .calendar-month {
+    background-color: #fff;
+    float: left;
+    width: 100%;
+    position: relative;
+    border: 1px solid #ccc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.vine-rounded .calendar-month {
+    border-radius: 5px;
+}
+
+.vine-calendar.vine-small .calendar-month {
+    width: auto;
+    float: none;
+    margin: 15px 15px 0;
+}
+
+.vine-calendar .month-last:before,
+.vine-calendar .month-next:before {
+    position: absolute;
+    top: 0;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 22px;
+    color: #777;
+    text-rendering: auto;
+    line-height: 42px;
+    width: 32px;
+    height: 42px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    cursor: pointer;
+}
+
+.vine-calendar .month-last:before {
+    left: 0;
+    content: "\f0d9";
+}
+
+.vine-calendar .month-next:before {
+    right: 0;
+    content: "\f0da";
+}
+
+.vine-calendar .month-last:hover:before,
+.vine-calendar .month-next:hover:before {
+    color: #000;
+}
+
+.vine-calendar .month-name {
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+    line-height: 42px;
+    color: #656565;
+}
+
+.vine-calendar.vine-small .calendar-wrapper {
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.vine-calendar .calendar-layout {
+	border-collapse: collapse;
+    border-spacing: 0;
+    float: left;
+    width: 100%;
+    margin: 15px 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.vine-calendar .day-name {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 15px;
+    color: #656565;
+}
+
+.vine-calendar .day-cell {
+}
+
+.vine-calendar .day-empty {
+}
+
+.vine-calendar .day-empty,
+.vine-calendar .day-fill {
+    margin: 2px 0 0 2px;
+}
+
+.vine-calendar tr .day-cell:first-child .day-empty,
+.vine-calendar tr .day-cell:first-child .day-fill {
+    margin: 2px 0 0 0;
+}
+
+.vine-calendar .day-fill {
+    text-align: right;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    min-width: 2em;
+    padding: 8px 4px;
+    cursor: pointer;
+    color: #656565;
+}
+
+.vine-rounded .day-fill {
+    border-radius: 4px;
+}
+
+.vine-calendar .day-now {
+    text-align: right;
+    font-weight: bold;
+    background-color: #e1f0ff;
+    color: #1450c8;
+    border: 1px solid #4babff !important;
+}
+
+.vine-calendar .day-set {
+    text-align: right;
+    font-weight: bold;
+    background-color: #fafac8;
+    color: #5e5e00;
+    border: 1px solid #a9a919 !important;
+}
+
+.vine-calendar .day-fill:hover,
+.vine-calendar .day-now:hover,
+.vine-calendar .day-set:hover {
+    border: 1px solid #999;
+}
+
+.vine-calendar .calendar-actions {
+    display: none;
+}
+
+.vine-calendar.vine-small .calendar-actions {
+    overflow: hidden;
+    float: left;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 15px 0 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.vine-calendar .calendar-actions .button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class NotificationSettings extends Model
+{
+    //
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+}

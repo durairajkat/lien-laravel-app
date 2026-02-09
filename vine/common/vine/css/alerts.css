@@ -1,0 +1,61 @@
+.vine .alert {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 15px 0 0;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    line-height: 1.5;
+}
+
+.vine .alert.default {
+    border-color: #b4dcff;
+    background-color: #e1f0ff;
+    color: #3c6496;
+}
+
+.vine .alert.success {
+    border-color: #aaf0a5;
+    background-color: #d7f5d7;
+    color: #146414;
+}
+
+.vine .alert.caution {
+    border-color: #f0f0a5;
+    background-color: #fafac8;
+    color: #a0a000;
+}
+
+.vine .alert.failure {
+    border-color: #ffc3c3;
+    background-color: #ffe6e6;
+    color: #b44646;
+}
+
+.vine .alert ul,
+.vine .alert ol {
+    margin-bottom: 0;
+    color: inherit;
+}
+
+.vine-rounded .alert {
+    border-radius: 4px;
+}
+
+/**
+ * Phone Styles
+ */
+@media (max-width: 767px) { }
+
+/**
+ * Tablet Styles
+ */
+@media (min-width: 768px) { }
+
+/**
+ * Desktop Styles
+ */
+@media (min-width: 992px) { }

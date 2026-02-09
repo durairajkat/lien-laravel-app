@@ -1,0 +1,84 @@
+<RatingServiceSelectionRequest>
+
+    <Request>
+        <TransactionReference>
+            <CustomerContext>Rating/Service Request</CustomerContext>
+            <XpciVersion>1.0</XpciVersion>
+        </TransactionReference>
+        <RequestAction></RequestAction>
+        <RequestOption></RequestOption>
+    </Request>
+
+    <PickupType>
+        <Code></Code>
+        <Description></Description>
+    </PickupType>
+
+    <CustomerClassification>
+        <Code></Code>
+    </CustomerClassification>
+
+    <Shipment>
+
+        <Description>Rate Request</Description>
+
+        <Shipper>
+            <ShipperNumber></ShipperNumber>
+            <Address>
+                <AddressLine1></AddressLine1>
+                <AddressLine2></AddressLine2>
+                <AddressLine3></AddressLine3>
+                <City></City>
+                <StateProvinceCode></StateProvinceCode>
+                <PostalCode></PostalCode>
+                <CountryCode></CountryCode>
+            </Address>
+        </Shipper>
+
+        <ShipFrom>
+            <CompanyName></CompanyName>
+            <AttentionName></AttentionName>
+            <PhoneNumber></PhoneNumber>
+            <FaxNumber></FaxNumber>
+            <Address>
+                <AddressLine1></AddressLine1>
+                <AddressLine2></AddressLine2>
+                <AddressLine3></AddressLine3>
+                <City></City>
+                <StateProvinceCode></StateProvinceCode>
+                <PostalCode></PostalCode>
+                <CountryCode></CountryCode>
+            </Address>
+        </ShipFrom>
+
+        <ShipTo>
+            <CompanyName></CompanyName>
+            <AttentionName></AttentionName>
+            <PhoneNumber></PhoneNumber>
+            <Address>
+                <AddressLine1></AddressLine1>
+                <AddressLine2></AddressLine2>
+                <AddressLine3></AddressLine3>
+                <City></City>
+                <StateProvinceCode></StateProvinceCode>
+                <PostalCode></PostalCode>
+                <CountryCode></CountryCode>
+            </Address>
+        </ShipTo>
+
+        <Service>
+            <Code></Code>
+            <Description></Description>
+        </Service>
+
+        <ShipmentServiceOptions></ShipmentServiceOptions>
+
+        <RateInformation> 
+            <NegotiatedRatesIndicator></NegotiatedRatesIndicator>
+        </RateInformation>
+
+        <Append/>
+
+    </Shipment>
+
+</RatingServiceSelectionRequest>

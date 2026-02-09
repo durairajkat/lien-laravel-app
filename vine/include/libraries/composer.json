@@ -1,0 +1,8 @@
+{
+    "config": {
+        "vendor-dir": "Composer"
+    },
+    "require": {
+        "dompdf/dompdf": "^0.8.3"
+    }
+}

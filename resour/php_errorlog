@@ -1,0 +1,3 @@
+[28-Sep-2021 08:34:01 UTC] PHP Fatal error:  Allowed memory size of 805306368 bytes exhausted (tried to allocate 601886720 bytes) in /home/customer/www/app.lienmanager.com/application/app/Http/Controllers/LienController.php on line 344
+[28-Sep-2021 08:34:10 UTC] PHP Fatal error:  Allowed memory size of 805306368 bytes exhausted (tried to allocate 534777856 bytes) in /home/customer/www/app.lienmanager.com/application/app/Http/Controllers/LienController.php on line 344
+[28-Sep-2021 08:34:20 UTC] PHP Fatal error:  Allowed memory size of 805306368 bytes exhausted (tried to allocate 467668992 bytes) in /home/customer/www/app.lienmanager.com/application/app/Http/Controllers/LienController.php on line 344
