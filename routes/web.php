@@ -17,7 +17,9 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\WebhookController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\ConsultationController;
+use App\Http\Controllers\ExcelUploadController;
 use App\Http\Controllers\LienDocumentController;
+use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\VineTransferController;
 use App\Http\Controllers\ProjectManagementController;
@@ -40,7 +42,7 @@ Route::get('/run-queue', function () {
 Route::get('/', [UserController::class, 'index'])->name('index');
 Route::get('/contact', [UserController::class, 'contact'])->name('contact');
 Route::get('/about', [UserController::class, 'about'])->name('about');
-Route::post('/contact', [ContactController::class, 'postContact'])->name('member.contact.post');
+Route::post('/contact', [ContactController::class, 'postContact'])->name('member.contact.post'); // send mail only not stored in DB
 //Admin Login Routes
 Route::get('admin/login', [UserController::class, 'adminLogin'])->name('admin.login');
 Route::post('login/submit/admin', [UserController::class, 'postLoginAdmin'])->name('post.login');
@@ -89,8 +91,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin']], function () {
     Route::get('autocomplete/jobinfo', [LienController::class, 'autoCompleteJobInfo'])->name('autocomplete.jobinfo');
 
     //User management Routes
-    Route::get('user/agency', [MemberController::class, 'agencyUser'])->name('user.agency');
-    Route::get('user/business', [MemberController::class, 'businessUser'])->name('user.business');
+    Route::get('user/agency', [MemberController::class, 'agencyUser'])->name('user.agency'); // not used
+    Route::get('user/business', [MemberController::class, 'businessUser'])->name('user.business'); // not used
     Route::get('user/sub', [MemberController::class, 'subUser'])->name('user.sub');
     Route::get('user/member', [MemberController::class, 'memberUser'])->name('user.member');
     Route::get('user/member/edit/{id}', [MemberController::class, 'updateMemberProfile'])->name('user.member.edit');
@@ -183,6 +185,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['admin']], function () {
     Route::post('plans/update', [MemberController::class, 'updatePlan'])->name('update.member.plan');
     Route::post('get/max-price', [UserController::class, 'getMaxPrice'])->name('package.get.maxPrice');
     Route::get('auto-complete/company', [ContactController::class, 'autoCompleteAdminCompany'])->name('autocomplete.admin.company');
+    Route::get('/excel-upload', [ExcelUploadController::class, 'index'])->name('excel.upload.form');
+    Route::post('/excel-upload', [ExcelUploadController::class, 'upload'])->name('excel.upload');
+    Route::get('/permissions', [PermissionController::class, 'index'])->name('admin.permissions');
+    Route::post('/submit/permission', [PermissionController::class, 'index'])->name('role.permissions.update');
 });
 
 //Authentication Member Route Groups
@@ -205,9 +211,9 @@ Route::group(['prefix' => 'member', 'middleware' => ['member', 'web']], function
     Route::post('subuser/submit', [UserController::class, 'submitSubuser'])->name('member.subuser.submit');
     Route::post('subuser/create', [UserController::class, 'createSubuser'])->name('member.subuser.create');
     Route::post('subuser/delete', [UserController::class, 'deleteSubuser'])->name('member.subuser.delete');
-    Route::get('customer/users', [ContactController::class, 'getUserContacts'])->name('member.contacts.users');
-    Route::get('customer/contacts', [ContactController::class, 'getCustomerContacts'])->name('member.contacts.contacts');
-    Route::get('industry/contacts', [ContactController::class, 'getIndustryContacts'])->name('member.contacts.industry');
+    Route::get('customer/users', [ContactController::class, 'getUserContacts'])->name('member.contacts.users'); // not used
+    Route::get('customer/contacts', [ContactController::class, 'getCustomerContacts'])->name('member.contacts.contacts'); //not used
+    Route::get('industry/contacts', [ContactController::class, 'getIndustryContacts'])->name('member.contacts.industry'); // not used
 
     //Not used
     Route::post('contacts/submit', [ContactController::class, 'submitContact'])->name('customer.submit.contact');
@@ -217,18 +223,18 @@ Route::group(['prefix' => 'member', 'middleware' => ['member', 'web']], function
     Route::post('contact/delete', [ContactController::class, 'deleteContact'])->name('customer.delete.contact');
 
     //Member Document Section
-    Route::get('document', [DocumentController::class, 'projectDocument'])->name('member.document');
+    Route::get('document', [DocumentController::class, 'projectDocument'])->name('member.document'); // not used
     Route::post('document/save', [DocumentController::class, 'saveProjectDocument'])->name('member.document.save');
 
     //Member Project Section
     Route::get('project', [ProjectController::class, 'getProject'])->name('member.project');
-    Route::get('record/search', [ProjectController::class, 'searchProjectRecord'])->name('member.record.search');
-    Route::get('search/construction/monitor', [ProjectController::class, 'searchProjectConstructionMonitor'])->name('member.search.construction.monitor');
-    Route::post('create/construction/monitor/project', [ProjectController::class, 'createProjectConstructionMonitor'])->name('member.create.construction.monitor');
+    Route::get('record/search', [ProjectController::class, 'searchProjectRecord'])->name('member.record.search'); // not used
+    Route::get('search/construction/monitor', [ProjectController::class, 'searchProjectConstructionMonitor'])->name('member.search.construction.monitor'); // code hidden
+    Route::post('create/construction/monitor/project', [ProjectController::class, 'createProjectConstructionMonitor'])->name('member.create.construction.monitor'); // code hidden
     Route::get('project/dashboard', [VineTransferController::class, 'viewDash'])->name('vine.job.view');
     Route::get('project/delete/{id}/{project_id}', [VineTransferController::class, 'delete'])->name('project.Delete');
     Route::post('project/save', [VineTransferController::class, 'save'])->name('project.save');
-    Route::post('project/jobcontract', [VineTransferController::class, 'jobcontract'])->name('project.jobcontract');
+    Route::post('project/jobcontract', [VineTransferController::class, 'jobcontract'])->name('project.jobcontract'); // not used
     Route::post('project/media', [VineTransferController::class, 'storeMedia'])->name('project.storeMedia');
     Route::get('project/json', [VineTransferController::class, 'getJSON'])->name('vine.job.json');
     Route::get('project/send-claim', [VineTransferController::class, 'sendClaim'])->name('vine.job.claim');
@@ -309,8 +315,8 @@ Route::group(['prefix' => 'member', 'middleware' => ['member', 'web']], function
     Route::get('contact-us', [ContactController::class, 'getContactUs'])->name('member.contact.us');
     Route::post('contact-us/post', [ContactController::class, 'postContactUs'])->name('member.contact.us.post');
     Route::post('consultation/post', [ConsultationController::class, 'postConsultation'])->name('member.consultation.post');
-    Route::get('consultation', [ConsultationController::class, 'getConsultation'])->name('member.get.consultation');
-    Route::get('collect-receivables', [ConsultationController::class, 'getCollectReceivables'])->name('member.get.collect.receivables');
+    Route::get('consultation', [ConsultationController::class, 'getConsultation'])->name('member.get.consultation'); // not used
+    Route::get('collect-receivables', [ConsultationController::class, 'getCollectReceivables'])->name('member.get.collect.receivables');  // not used
 
     //New Claim
     Route::get('new-claim', [ClaimController::class, 'newClaimStep1'])->name('admin.new.claim_step1');
@@ -357,7 +363,7 @@ Route::group(['prefix' => 'lien', 'middleware' => ['lien', 'web']], function () 
     //Lien update profile
     Route::get('update/profile', [UserController::class, 'updateLienProfile'])->name('lien.update.profile');
     Route::post('update/profile/action', [UserController::class, 'updateLienProfileAction'])->name('lien.action.profile');
-    Route::get('job-info', [LienController::class, 'lienJobInfoView'])->name('lien.view.jobinfos');
+    Route::get('job-info', [LienController::class, 'lienJobInfoView'])->name('lien.view.jobinfos');  // not used
     Route::get('autocomplete/lien/company', [MemberController::class, 'autocompleteCompany'])->name('lien.company.autocomplete');
 
     //Member change password
@@ -365,13 +371,12 @@ Route::group(['prefix' => 'lien', 'middleware' => ['lien', 'web']], function () 
     Route::get('view/project', [ProjectController::class, 'viewLienProject'])->name('lien.view.project');
     Route::post('view/project/task/update', [ProjectController::class, 'updateTask'])->name('lien.project.update.task');
     Route::get('logout', [UserController::class, 'logout'])->name('lien.logout');
-    Route::get('project/document-claim-view/{project_id}/{flag}', [LienDocumentController::class, 'getDocumentClaimView'])->name('get.lien.documentClaimView');
-    Route::get('project/document-credit-application-view/{project_id}/{flag}', [LienDocumentController::class, 'getDocumentCreditView'])->name('get.lien.documentCreditView');
-    Route::get('project/document-joint-payment-view/{project_id}/{flag}', [LienDocumentController::class, 'getDocumentJointView'])->name('get.lien.documentJointView');
+    Route::get('project/document-claim-view/{project_id}/{flag}', [LienDocumentController::class, 'getDocumentClaimView'])->name('get.lien.documentClaimView');  // route available but function getDocumentClaimView not exists
+    Route::get('project/document-credit-application-view/{project_id}/{flag}', [LienDocumentController::class, 'getDocumentCreditView'])->name('get.lien.documentCreditView'); // route available but function getDocumentCreditView not exists
+    Route::get('project/document-joint-payment-view/{project_id}/{flag}', [LienDocumentController::class, 'getDocumentJointView'])->name('get.lien.documentJointView'); // route available but function getDocumentJointView not exists
     Route::get('project/document-waver-view/{project_id}/{flag}', [LienDocumentController::class, 'getDocumentWaverView'])->name('get.lien.documentWaverView');
     Route::get('project/job-info-sheet/{project_id}', [LienDocumentController::class, 'getJobInfoSheet'])->name('get.lien.job.info.sheet');
     Route::get('job-info/export/{project_id}', [LienDocumentController::class, 'exportJobInfo'])->name('get.lien.jobInfoExport');
-    Route::get('project/job-info-sheet/{project_id}', [LienDocumentController::class, 'getJobInfoSheet'])->name('get.lien.job.info.sheet');
     Route::get('project/line-bound-summary/{state}/{projectType}', [LienDocumentController::class, 'getLineBoundSummery'])->name('get.lien.lineBoundSummery');
 });
 
@@ -382,22 +387,22 @@ Route::post('consultation/post', [ConsultationController::class, 'postConsultati
 Route::get('consultation', [ConsultationController::class, 'getConsultation'])->name('member.get.consultation');
 
 //Export Database
-Route::get('export', [ExportController::class, 'deadline'])->name('export');
-Route::get('export/line-bound-summary', [ExportController::class, 'lineBoundSummery'])->name('line.bound.summery');
+Route::get('export', [ExportController::class, 'deadline'])->name('export');  // not used in application
+Route::get('export/line-bound-summary', [ExportController::class, 'lineBoundSummery'])->name('line.bound.summery'); // not used in application
 
-Route::get('express-toggle', function() {
+Route::get('express-toggle', function () {
 
     $on_create_project_route = request()->has('new');
 
-    if(session()->has('express') || request()->has('express')) {
+    if (session()->has('express') || request()->has('express')) {
         session()->forget('express');
-        if($on_create_project_route) {
+        if ($on_create_project_route) {
             return redirect()->route('member.create.project');
         }
     } else {
         session()->put('express', true);
 
-        if($on_create_project_route) {
+        if ($on_create_project_route) {
             return redirect()->route('member.create.express.project');
         }
     }

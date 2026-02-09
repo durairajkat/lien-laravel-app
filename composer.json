@@ -2,7 +2,10 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
@@ -16,6 +19,7 @@
         "laravel/tinker": "^2.5",
         "maatwebsite/excel": "^3.1",
         "mailgun/mailgun-php": "^3.5",
+        "owen-it/laravel-auditing": "^13.7",
         "spatie/laravel-medialibrary": "^9.7"
     },
     "require-dev": {
@@ -62,7 +66,22 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "audit": {
+            "ignore": [
+                "PKSA-qstp-ffwg-8hp6",
+                "PKSA-5vz3-q51h-7mg4",
+                "PKSA-7ztm-rpt3-qqzk",
+                "PKSA-4jrs-y99s-q8j6",
+                "PKSA-hbk6-2vfz-8f8n",
+                "PKSA-kj9c-tr41-t8mj",
+                "PKSA-872h-8556-2chm"
+            ],
+            "block-insecure": false
+        },
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true

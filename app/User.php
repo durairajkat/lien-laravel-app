@@ -2,17 +2,24 @@
 
 namespace App;
 
+use App\Notifications\CustomResetPasswordNotification;
+use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Contracts\Auth\CanResetPassword;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use OwenIt\Auditing\Contracts\Auditable;
 use DB;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
  * Class User for user table
  * @package App
  */
-class User extends Authenticatable
+class User extends Authenticatable implements Auditable, CanResetPassword
 {
-    use Notifiable;
+    use HasApiTokens, SoftDeletes, Notifiable, HasFactory;
+    use \OwenIt\Auditing\Auditable;
 
     /**
      * The attributes that are mass assignable.
@@ -20,7 +27,13 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'user_name', 'role', 'email', 'password',
+        'name',
+        'user_name',
+        'role',
+        'email',
+        'password',
+        'status',
+        'parent_id'
     ];
 
     /**
@@ -29,17 +42,9 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password',
+        'remember_token',
     ];
-
-    /**
-     * Encrypt password
-     * @param $password
-     */
-    public function setPasswordAttribute($password)
-    {
-        $this->attributes['password'] = bcrypt($password);
-    }
 
     /**
      * Relation with Role
@@ -210,7 +215,12 @@ class User extends Authenticatable
      */
     public function companies()
     {
-        return $this->hasOne('App\Models\Company');
+        return $this->hasMany('App\Models\Company', 'user_id', 'id');
+    }
+
+    public function company()
+    {
+        return $this->hasOne('App\Models\Company', 'user_id', 'id');
     }
 
     /**
@@ -254,22 +264,26 @@ class User extends Authenticatable
         return $this->hasOne('App\Models\MemberBillingAddress', 'user_id');
     }
 
-    public static function getAllChild($user_id) {
-       return DB::select(
-           DB::raw("
+    public static function getAllChild($user_id)
+    {
+        return DB::select(
+            DB::raw(
+                "
                 SELECT  id, name
                 FROM    (SELECT id, parent_id, name FROM users
                          ORDER BY parent_id, id) users_sorted,
                         (SELECT @pv := '$user_id') initialisation
                 WHERE   find_in_set(parent_id, @pv)
                 AND     length(@pv := concat(@pv, ',', id))"
-           )
-       );
+            )
+        );
     }
 
-    public static function getAllParents($user_id) {
+    public static function getAllParents($user_id)
+    {
         return DB::select(
-            DB::raw("
+            DB::raw(
+                "
                 SELECT T2.id, T2.name
                 FROM (
                     SELECT
@@ -284,5 +298,15 @@ class User extends Authenticatable
                 ORDER BY T1.lvl DESC"
             )
         );
+    }
+
+    public function permissions()
+    {
+        return $this->role->permissions ?? collect();
+    }
+
+    public function sendPasswordResetNotification($token)
+    {
+        $this->notify(new CustomResetPasswordNotification($token));
     }
 }

@@ -1,45 +1,44 @@
-<?php
-
-namespace Database\Seeders;
-
-use Carbon\Carbon;
-use App\Models\ProjectRole;
-use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-
-class ProjectRoleSeeder extends Seeder
-{
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
-    {
-        //truncate the roles table
-        ProjectRole::truncate();
-        //Insert values to seed table
-        DB::table('project_roles')->insert([
-            [
-                'project_roles' => 'Original Contractor',
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now()
-            ],
-            [
-                'project_roles' => 'Subcontractor',
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now()
-            ],
-            [
-                'project_roles' => 'Supplier',
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now()
-            ],
-            [
-                'project_roles' => 'Lessor of Equipment',
-                'created_at' => Carbon::now(),
-                'updated_at' => Carbon::now()
-            ]
-        ]);
-    }
-}
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\ProjectRole;
+use Carbon\Carbon;
+use Illuminate\Database\Seeder;
+
+class ProjectRoleSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+
+     *
+
+     * @return void
+     */
+    public function run()
+    {
+        //truncate the roles table
+
+        $now = Carbon::now();
+
+        //Insert values to seed table
+
+        $names = [
+
+            'Original Contractor' => 'Prime/general contractor with direct contract to owner',
+
+            'Subcontractor' => 'Working under general contractor or another subcontractor',
+
+            'Supplier' => 'Provides materials or services to a project',
+
+            'Lessor of Equipment' => 'Renting or leasing equipment for the project',
+        ];
+
+        foreach ($names as $name => $description) {
+            ProjectRole::updateOrCreate(
+                ['project_roles' => $name],
+                ['created_at' => $now, 'updated_at' => $now, 'description' => $description]
+            );
+        }
+    }
+}
