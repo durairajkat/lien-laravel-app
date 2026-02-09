@@ -7,9 +7,9 @@ use App\Models\Plan;
 use App\Models\Payment;
 
 use Illuminate\Http\Request;
-use Laravel\Cashier\Http\Controllers\WebhookController as CashierController;
+// use Laravel\Cashier\Http\Controllers\WebhookController as CashierController;
 
-class WebhookController extends CashierController
+class WebhookController
 {
 
     public function handleCustomerUpdated($payload)
