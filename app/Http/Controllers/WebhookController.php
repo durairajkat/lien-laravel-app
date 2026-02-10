@@ -43,7 +43,7 @@ class WebhookController
         $customer = $payload->customer;
 
         $user = User::where('stripe_id', '=', $customer)->firstOrFail();
-        $memberSubscription = $user->subscriptions()->whereNull('ends_at')->first();
+        // $memberSubscription = $user->subscriptions()->whereNull('ends_at')->first();
 
         if (isset($memberSubscription) && $memberSubscription->name == 'trial') {
             $plan = Plan::where('name', '=', $user->actual_plan)->first();

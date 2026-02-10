@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\PasswordController;
 use App\Http\Controllers\Api\RegisterController;
 use App\Http\Controllers\Api\V1\AiFileReaderController;
 use App\Http\Controllers\Api\V1\master\CountryApiController;
+use App\Http\Controllers\Api\V1\master\CountyApiCountroller;
 use App\Http\Controllers\Api\V1\master\ProjectRoleApiController;
 use App\Http\Controllers\Api\V1\master\ProjectTypeApiController;
 use App\Http\Controllers\Api\V1\master\StateApiController;
@@ -49,9 +50,12 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::apiResource('sub-users', SubUserController::class)
         ->only(['store', 'update', 'destroy']);
 
-    Route::post('ai/read-document', [AiFileReaderController::class, 'readDocument']);
+    Route::post('ai/parse-document', [AiFileReaderController::class, 'readDocument']);
+    Route::get('ai/document-result/{fileId}', [AiFileReaderController::class, 'getResult']);
+
     Route::get('/countries', [CountryApiController::class, 'getCountries']);
     Route::post('/states', [StateApiController::class, 'getStates']);
+    Route::post('/counties', [CountyApiCountroller::class, 'getCounties']);
     Route::get('/project-types', [ProjectTypeApiController::class, 'index']);
     Route::get('/project-roles', [ProjectRoleApiController::class, 'index']);
     Route::post('/check-project-roles-customers', [ProjectController::class, 'checkProjectRole']);

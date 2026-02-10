@@ -72,7 +72,7 @@ class UserController extends Controller
     public function getLogin()
     {
         if (Auth::check() && Auth::user()->isMember()) {
-            $plan = $this->getUserSubscription();
+            $plan = '';// $this->getUserSubscription();
             if ($plan != '') {
                 return redirect()->route('member.dashboard');
             } else {
@@ -116,7 +116,7 @@ class UserController extends Controller
     public function getUserSubscription()
     {
         $subscription = '';
-        $memberSubscription = Auth::user()->subscriptions()->whereNull('ends_at')->first();
+        // $memberSubscription = Auth::user()->subscriptions()->whereNull('ends_at')->first();
 
         if (Auth::user()->actual_plan == 'basic' && isset($memberSubscription)) {
             $subscription = 'basic';
@@ -437,7 +437,7 @@ class UserController extends Controller
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $remember)) {
             if (Auth::user()->status == 0) {
                 if (Auth::user()->checkMember()) {
-                    $plan = $this->getUserSubscription();
+                    // $plan = $this->getUserSubscription();
                     // if ($plan != '') {
                     //     if ($this->checkTrialAvailbility()) {
                     //         return redirect()->route('member.dashboard');
@@ -463,7 +463,7 @@ class UserController extends Controller
         } elseif (Auth::attempt(['email' => $request->email, 'password' => $request->password], $remember)) {
             if (Auth::user()->status == 0) {
                 if (Auth::user()->checkMember()) {
-                    $plan = $this->getUserSubscription();
+                    // $plan = $this->getUserSubscription();
                     // if ($plan != '') {
                     //     if ($this->checkTrialAvailbility()) {
                     //         return redirect()->route('member.dashboard');
@@ -1914,7 +1914,7 @@ class UserController extends Controller
     {
         $companies = Company::pluck('company', 'id');
 
-        $plan = $this->getUserSubscription();
+        $plan = '';//$this->getUserSubscription();
         if ($plan == 'basic') {
             $state_id = $this->getUserState();
             $states = State::where('id', '=', $state_id)->pluck('name', 'id');

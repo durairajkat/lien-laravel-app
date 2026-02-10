@@ -38,4 +38,7 @@ return [
             'tolerance' => env('STRIPE_WEBHOOK_TOLERANCE', 300),
         ],
     ],
+    'openai' => [
+        'key' => env('OPENAI_API_KEY'),
+    ],
 ];

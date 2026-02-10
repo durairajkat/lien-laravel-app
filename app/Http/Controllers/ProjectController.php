@@ -3620,7 +3620,7 @@ class ProjectController extends Controller
     public function getUserSubscription()
     {
         $subscription = '';
-        $memberSubscription = Auth::user()->subscriptions()->whereNull('ends_at')->first();
+        // $memberSubscription = Auth::user()->subscriptions()->whereNull('ends_at')->first();
 
         if (Auth::user()->actual_plan == 'basic' && isset($memberSubscription)) {
             $subscription = 'basic';

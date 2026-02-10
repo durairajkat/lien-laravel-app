@@ -21,7 +21,12 @@ class ProjectApiController extends Controller
             'role_id' => $request->roleId,
             'start_date' => $request->startDate ?? null,
             'esitmated_end_date' => $request->endDate ?? null,
-        ];
+            'address' => $request->jobAddress ?? null,
+            'city' => $request->jobCity ?? null,
+            'zip' => $request->jobZip ?? null,
+            'county_id' => $request->jobCountyId ?? null,
+            'description' => $request->jobName ?? null,
+        ]; // this will insert wizard project details and project job description
 
         $project = ProjectDetail::create($ins);
         /**  Insert in Project Dates */

@@ -29,7 +29,9 @@ class ProjectDetail extends Model implements Auditable
         'start_date',
         'esitmated_end_date',
         'company_work',
-        'api'
+        'api',
+        'description',
+        'county_id'
     ];
 
     public function state()
