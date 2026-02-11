@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Project;
 
 use App\Models\ProjectDetail;
+use App\Traits\CommonValidationRules;
 use Illuminate\Foundation\Http\FormRequest;
 
 class ProjectSaveRequest extends FormRequest
@@ -31,6 +32,8 @@ class ProjectSaveRequest extends FormRequest
             'stateId' => 'required|exists:states,id',
             'roleId' => 'required|exists:project_roles,id',
             'customerTypeId' => 'required|exists:customer_codes,id',
+            'county_id' => 'nullable|exists:counties,id',
+            'jobZip' => CommonValidationRules::zipCode(false),
         ];
     }
 

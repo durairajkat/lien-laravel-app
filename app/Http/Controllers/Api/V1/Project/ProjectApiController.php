@@ -6,45 +6,61 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\ProjectSaveRequest;
 use App\Models\ProjectDates;
 use App\Models\ProjectDetail;
+use App\Services\Project\ProjectContractService;
+use Illuminate\Support\Facades\DB;
 
 class ProjectApiController extends Controller
 {
-    public function saveProject(ProjectSaveRequest $request)
+    public function saveProject(ProjectSaveRequest $request, ProjectContractService $contractService)
     {
+        DB::transaction(function () use ($request, $contractService) {
 
-        $ins = [
-            'project_name' => $request->projectName,
-            'user_id' => auth()->id(),
-            'state_id' => $request->stateId,
-            'project_type_id' => $request->projectTypeId,
-            'customer_id' => $request->customerTypeId,
-            'role_id' => $request->roleId,
-            'start_date' => $request->startDate ?? null,
-            'esitmated_end_date' => $request->endDate ?? null,
-            'address' => $request->jobAddress ?? null,
-            'city' => $request->jobCity ?? null,
-            'zip' => $request->jobZip ?? null,
-            'county_id' => $request->jobCountyId ?? null,
-            'description' => $request->jobName ?? null,
-        ]; // this will insert wizard project details and project job description
+            $ins = [
+                'project_name' => $request->projectName,
+                'user_id' => auth()->id(),
+                'state_id' => $request->stateId,
+                'project_type_id' => $request->projectTypeId,
+                'customer_id' => $request->customerTypeId,
+                'role_id' => $request->roleId,
+                'start_date' => $request->startDate ?? null,
+                'esitmated_end_date' => $request->endDate ?? null,
+                'address' => $request->jobAddress ?? null,
+                'city' => $request->jobCity ?? null,
+                'zip' => $request->jobZip ?? null,
+                'county_id' => $request->jobCountyId ?? null,
+                'description' => $request->jobName ?? null,
+            ]; // this will insert wizard project details and project job description
 
-        $project = ProjectDetail::create($ins);
-        /**  Insert in Project Dates */
-        $dates = $request->furnishingDates ?? [];
-        if (!empty($dates) && is_array($dates)) {
-            foreach ($dates as $key => $date) {
-                $data[$key] = $date;
-                ProjectDates::updateOrCreate(
-                    [
-                        'project_id' => $project->id,
-                    ],
-                    [
-                        'date_id' => $key,
-                        'date_value' => $date,
-                    ]
-                );
+            $project = ProjectDetail::create($ins);
+            /**  Insert in Project Dates */
+            $dates = $request->furnishingDates ?? [];
+            if (!empty($dates) && is_array($dates)) {
+                foreach ($dates as $key => $date) {
+                    $data[$key] = $date;
+                    ProjectDates::updateOrCreate(
+                        [
+                            'project_id' => $project->id,
+                        ],
+                        [
+                            'date_id' => $key,
+                            'date_value' => $date,
+                        ]
+                    );
+                }
             }
-        }
+
+            /** Project Contract */
+            $contractService->saveOrUpdate($project->id, [
+                'base_amount' => $request->baseContractAmount,
+                'extra_amount' => $request->additionalCosts,
+                'credits' => $request->paymentsCredits,
+                'general_description' => $request->materialServicesDescription,
+                'job_no' => $request->jobProjectNumber,
+            ]);
+
+
+        });
+
 
         return response()->json([
             'status' => true,
