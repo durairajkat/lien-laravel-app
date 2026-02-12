@@ -43,6 +43,8 @@ class DatabaseSeeder extends Seeder
         $this->call(ProjectTypeSeeder::class);
         $this->call(PropertyTypeSeeder::class);
         $this->call(CountrySeeder::class);
+        $this->call(ContactRoleSeeder::class);
+        $this->call(CountySeeder::class);
 
 
     }

@@ -21,7 +21,9 @@ class Company extends Model implements Auditable
         'zip',
         'phone',
         'fax',
-        'created_by'
+        'created_by',
+        'project_id',
+        'is_selected'
     ];
     /**
      * Returns the user of the company
@@ -62,5 +64,15 @@ class Company extends Model implements Auditable
     public function getMapCompanyCustomer()
     {
         return $this->hasMany('App\Models\MapCompanyContact', 'company_id', 'id');
+    }
+
+    public function contacts()
+    {
+        return $this->belongsToMany(
+            CompanyContact::class,
+            'map_company_contacts',
+            'company_id',
+            'company_contact_id'
+        );
     }
 }
