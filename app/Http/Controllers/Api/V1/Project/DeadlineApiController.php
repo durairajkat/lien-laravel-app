@@ -3,7 +3,6 @@
 namespace App\Http\Controllers\Api\V1\Project;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Project\DeadlineRequest;
 use App\Http\Resources\Project\RemedyDatesResource;
 use App\Models\LienLawSlideChart;
 use App\Models\ProjectDetail;
@@ -26,8 +25,6 @@ class DeadlineApiController extends Controller
         $projectTypeId = $request->project_type_id;
         $roleId        = $request->role_id;
         $customerId    = $request->customer_type_id;
-
-
 
         $remedy = Remedy::where('state_id', $stateId)
             ->where('project_type_id', $projectTypeId);
@@ -56,7 +53,7 @@ class DeadlineApiController extends Controller
 
     public function getDeadlineInfo(Request $request)
     {
-
+        $furnishingDates = [];
         if ($request->filled('project_id')) {
             $project = ProjectDetail::findOrFail($request->project_id);
 
@@ -67,8 +64,11 @@ class DeadlineApiController extends Controller
             $roleId        = $request->role_id;
             $customerId    = $request->customer_id;
             $answer        = $request->answer1 ?? null;
+            $furnishingDates = $request->furnishing_dates ?? [];
+            if (is_string($furnishingDates)) {
+                $furnishingDates = json_decode($furnishingDates, true);
+            }
 
-            // Optional: fake project object for service compatibility
             $project = (object) [
                 'state_id'        => $stateId,
                 'project_type_id' => $projectTypeId,
@@ -154,13 +154,44 @@ class DeadlineApiController extends Controller
         /**
          * Days remaining
          */
-        $daysRemain = $this->deadlineService->calculateDaysRemaining($deadline, $project);
+        $daysRemain = $this->deadlineService->calculateDaysRemaining($deadline, $project, $furnishingDates);
+        $finalData = [];
+        if (count($deadline) > 0) {
+            foreach ($deadline as $key => $dline) {
+                if (strlen($daysRemain[$key]['preliminaryDates']) > 5) {
+                    $today = date('Y-m-d');
+                    $today = new \DateTime($today);
+                    $prelimDead = $daysRemain[$key]['preliminaryDates'];
+                    $formatPrelim = new \DateTime($prelimDead);
+                    $daysUntilDeadline = date_diff($formatPrelim, $today);
+                    $daysUntilDeadline = $daysUntilDeadline->format('%a');
+                    $late = date_diff($formatPrelim, $today);
+                    $late = $late->format('%R');
+                } else {
+                    $daysUntilDeadline = 'N/A';
+                    $late = 0;
+                }
+
+                $tmp = [
+                    'title' => $dline->getRemedy->remedy,
+                    'date' => strlen($daysRemain[$key]['preliminaryDates']) > 5 ? date('M d, Y', strtotime($daysRemain[$key]['preliminaryDates'])) : 'N/A',
+                    'is_late' =>  strlen($daysRemain[$key]['preliminaryDates']) > 5 && $late === '+' ? true : false,
+                    'daysRemaining' => strlen($daysRemain[$key]['preliminaryDates']) > 5 ? $daysUntilDeadline : 'N/A',
+                    'remedies' => [
+                        'title' => $dline->getRemedy->remedy,
+                        'description' => $dline->short_description,
+                    ],
+                    'requirement' => $dline->short_description
+                ];
+                $finalData[] = $tmp;
+            }
+        }
 
         return response()->json([
             'status'          => true,
-            'daysRemain'      => $daysRemain,
-            'deadlines'       => $deadline,
-            'data'            => $liens,
+            'data' => [
+                'deadlines'       => $finalData,
+            ],
             'message'         => 'Deadline Info Retrieved Successfully',
         ], 200);
     }
