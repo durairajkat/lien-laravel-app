@@ -5,8 +5,10 @@ namespace App\Http\Controllers\Api\V1\Project;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\ProjectSaveRequest;
 use App\Models\Company;
+use App\Models\CompanyContact;
 use App\Models\ProjectDates;
 use App\Models\ProjectDetail;
+use App\Models\ProjectIndustryContactMap;
 use App\Services\Project\ProjectContractService;
 use Illuminate\Support\Facades\DB;
 
@@ -102,6 +104,69 @@ class ProjectApiController extends Controller
                 }
             }
 
+            /** insert project contacts */
+            $projectContacts = $request->projectContacts ?? [];
+            if (!empty($projectContacts)) {
+                $newContacts = collect($projectContacts)
+                    ->filter(fn($data) => !empty($data['is_new']))
+                    ->values(); // reset index
+
+                if ($newContacts->isNotEmpty()) {
+                    foreach ($newContacts as $contact) {
+                        if (!$contact['company']) {
+                            continue;
+                        }
+                        // insert in company
+                        $con_ins = [
+                            'website' => $contact['website'] ?? null,
+                            'address' => $contact['address'] ?? null,
+                            'city' => $contact['city'] ?? null,
+                            'state_id' => $contact['state_id'] ?? null,
+                            'zip' => $contact['zip'] ?? null,
+                            'phone' => $contact['phone'] ?? null,
+                            'fax' => $contact['fax'] ?? null,
+                            'user_id' => $user_id,
+                            'company' => $contact['company'],
+                            'contact_type' => 'project'
+                        ];
+                        $company = Company::create($con_ins);
+
+                        //insert in company contact
+                        $contacts = $contact['contacts'] ?? [];
+                        $project_contact_ins = [];
+                        foreach ($contacts as $tmp) {
+                            $project_contact_ins[] = [
+                                'user_id' => $user_id,
+                                'type' => '1',
+                                'role_id' => $tmp['role_id'],
+                                'contact_role_id' => $contact['role_id'] ?? null,
+                                'first_name' => $tmp['firstName'] ?? null,
+                                'last_name' => $tmp['lastName'] ?? null,
+                                'email' => $tmp['email'] ?? null,
+                                'phone' => $tmp['directPhone'] ?? null,
+                                'cell' => $tmp['cell'] ?? null,
+                            ];
+                        }
+                        $company->contacts()->createMany($project_contact_ins);
+                    }
+                }
+            }
+            $selectedProjectContacts = $request->selectedProjectContacts ?? [];
+            if (!empty($selectedProjectContacts))
+            {
+                ProjectIndustryContactMap::where('projectId', $project->id)->delete();
+                foreach ($selectedProjectContacts as $pro) {
+                    $companyContacts = company::where('user_id', $user_id)->where('company', $pro['company'])
+                        ->where('contact_type', 'project')->first();
+
+                    if (!empty($companyContacts)) {
+                        ProjectIndustryContactMap::create([
+                            'projectId' => $project->id,
+                            'company_contact_id' => $companyContacts->id
+                        ]);
+                    }
+                }
+            }
         });
 
 

@@ -23,8 +23,8 @@ trait CommonValidationRules
     public static function zipCode(bool $required = true): array
     {
         return $required
-            ? ['required', 'regex:/^\d{5}$/']
-            : ['nullable', 'regex:/^\d{5}$/'];
+            ? ['required', 'regex:/^\d{3,7}$/']
+            : ['nullable', 'regex:/^\d{3,7}$/'];
     }
 
     public static function companyId(bool $required = true): array

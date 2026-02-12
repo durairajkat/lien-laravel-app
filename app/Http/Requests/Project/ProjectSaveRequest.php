@@ -34,28 +34,10 @@ class ProjectSaveRequest extends FormRequest
             'customerTypeId' => 'required|exists:customer_codes,id',
             'county_id' => 'nullable|exists:counties,id',
             'jobZip' => CommonValidationRules::zipCode(false),
-            'selectedCustomerContacts.zip' => CommonValidationRules::zipCode(false),
-            'selectedCustomerContacts.phone' => CommonValidationRules::phone(false),
-            'selectedCustomerContacts.contacts' => 'nullable|array|min:1',
-
-            'selectedCustomerContacts.contacts.*.email' => 'nullable|email|max:255',
-
-            'selectedCustomerContacts.contacts.*.directPhone' => CommonValidationRules::phone(false),
-            'selectedCustomerContacts.contacts.*.cell' => CommonValidationRules::phone(false),
+            'selectedCustomerContacts' => 'nullable|array',
+            
         ];
     }
-
-    public function attributes()
-    {
-        return [
-            'selectedCustomerContacts.contacts.*.email' => 'customer contact email',
-            'selectedCustomerContacts.contacts.*.firstName' => 'customer contact first name',
-            'selectedCustomerContacts.contacts.*.lastName' => 'customer contact last name',
-            'selectedCustomerContacts.contacts.*.directPhone' => 'customer contact direct phone',
-            'selectedCustomerContacts.contacts.*.cell' => 'customer contact mobile number',
-        ];
-    }
-
 
     public function withValidator($validator)
     {

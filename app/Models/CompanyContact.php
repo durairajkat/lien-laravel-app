@@ -17,7 +17,8 @@ class CompanyContact extends Model
         'last_name',
         'email',
         'phone',
-        'cell'
+        'cell',
+        'contact_role_id'
     ];
 
     public function user()

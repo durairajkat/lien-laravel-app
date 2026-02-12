@@ -23,7 +23,8 @@ class Company extends Model implements Auditable
         'fax',
         'created_by',
         'project_id',
-        'is_selected'
+        'is_selected',
+        'contact_type'
     ];
     /**
      * Returns the user of the company

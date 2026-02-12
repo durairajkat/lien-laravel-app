@@ -18,6 +18,7 @@ use App\Http\Controllers\Api\V1\Profile\ProfileController;
 use App\Http\Controllers\Api\V1\Project\CustomerContactController;
 use App\Http\Controllers\Api\V1\Project\DeadlineApiController;
 use App\Http\Controllers\Api\V1\Project\ProjectApiController;
+use App\Http\Controllers\Api\V1\Project\ProjectContactController;
 use App\Http\Controllers\Api\V1\SubUserController;
 
 /*
@@ -65,6 +66,7 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::post('/check-project-roles-customers', [ProjectController::class, 'checkProjectRole']);
     Route::post('/remedy-dates', [DeadlineApiController::class, 'getRemedyDates']);
     Route::post('/deadline-info', [DeadlineApiController::class, 'getDeadlineInfo']);
+    Route::get('/project-contacts-all', [ProjectContactController::class, 'index']);
     Route::post('/save-project', [ProjectApiController::class, 'saveProject']);
 
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
