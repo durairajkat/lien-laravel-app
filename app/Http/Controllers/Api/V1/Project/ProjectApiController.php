@@ -5,15 +5,18 @@ namespace App\Http\Controllers\Api\V1\Project;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\ProjectSaveRequest;
 use App\Models\Company;
-use App\Models\CompanyContact;
 use App\Models\ProjectDates;
 use App\Models\ProjectDetail;
 use App\Models\ProjectIndustryContactMap;
 use App\Services\Project\ProjectContractService;
+use App\Services\Project\ProjectDocumentService;
 use Illuminate\Support\Facades\DB;
+
 
 class ProjectApiController extends Controller
 {
+    public function __construct(protected ProjectDocumentService $projectDocumentService) {}
+
     public function saveProject(ProjectSaveRequest $request, ProjectContractService $contractService)
     {
         DB::transaction(function () use ($request, $contractService) {
@@ -36,7 +39,8 @@ class ProjectApiController extends Controller
 
             $project = ProjectDetail::create($ins);
             /**  Insert in Project Dates */
-            $dates = $request->furnishingDates ?? [];
+            $dates = $request->furnishingDates ? json_decode($request->furnishingDates, true) : [];
+            info($dates);
             if (!empty($dates) && is_array($dates)) {
                 foreach ($dates as $key => $date) {
                     $data[$key] = $date;
@@ -105,7 +109,7 @@ class ProjectApiController extends Controller
             }
 
             /** insert project contacts */
-            $projectContacts = $request->projectContacts ?? [];
+            $projectContacts = $request->projectContacts ? json_decode($request->projectContacts, true) : [];
             if (!empty($projectContacts)) {
                 $newContacts = collect($projectContacts)
                     ->filter(fn($data) => !empty($data['is_new']))
@@ -151,9 +155,8 @@ class ProjectApiController extends Controller
                     }
                 }
             }
-            $selectedProjectContacts = $request->selectedProjectContacts ?? [];
-            if (!empty($selectedProjectContacts))
-            {
+            $selectedProjectContacts = $request->selectedProjectContacts ? json_decode($request->selectedProjectContacts, true) : [];
+            if (!empty($selectedProjectContacts)) {
                 ProjectIndustryContactMap::where('projectId', $project->id)->delete();
                 foreach ($selectedProjectContacts as $pro) {
                     $companyContacts = company::where('user_id', $user_id)->where('company', $pro['company'])
@@ -166,6 +169,11 @@ class ProjectApiController extends Controller
                         ]);
                     }
                 }
+            }
+            if ($request->has('doucments') && !empty($request->has('docuemnts'))) {
+
+                $uploaded = $this->projectDocumentService->storeDocument($request, $project->id); // returns array
+                
             }
         });
 

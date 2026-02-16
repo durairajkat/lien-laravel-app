@@ -34,7 +34,6 @@ class ProjectSaveRequest extends FormRequest
             'customerTypeId' => 'required|exists:customer_codes,id',
             'county_id' => 'nullable|exists:counties,id',
             'jobZip' => CommonValidationRules::zipCode(false),
-            'selectedCustomerContacts' => 'nullable|array',
             
         ];
     }

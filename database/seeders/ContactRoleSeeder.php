@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Helpers\StringHelper;
 use App\Models\Master\ContactRole;
 use Illuminate\Database\Seeder;
 
@@ -39,6 +40,7 @@ class ContactRoleSeeder extends Seeder
             foreach ($roleList as $role) {
                 ContactRole::updateOrCreate(
                     ['name' => $role],
+                    ['normalized_name' => StringHelper::normalizeString($role)],
                     ['role_type' => $type]
                 );
             }

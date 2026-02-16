@@ -14,6 +14,7 @@ class ContactRole extends Model implements Auditable
 
     protected $fillable = [
         'name',
+        'normalized_name',
         'description',
         'role_type',
         'created_by'

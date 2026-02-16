@@ -20,6 +20,7 @@ use App\Http\Controllers\Api\V1\Project\DeadlineApiController;
 use App\Http\Controllers\Api\V1\Project\ProjectApiController;
 use App\Http\Controllers\Api\V1\Project\ProjectContactController;
 use App\Http\Controllers\Api\V1\SubUserController;
+use App\Http\Controllers\ExcelUploadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,7 +67,10 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::post('/check-project-roles-customers', [ProjectController::class, 'checkProjectRole']);
     Route::post('/remedy-dates', [DeadlineApiController::class, 'getRemedyDates']);
     Route::post('/deadline-info', [DeadlineApiController::class, 'getDeadlineInfo']);
+    /** Contact */
     Route::get('/project-contacts-all', [ProjectContactController::class, 'index']);
+    Route::post('/upload-customer-contact-excel', [ExcelUploadController::class, 'uploadCustomerContact']);
+
     Route::post('/save-project', [ProjectApiController::class, 'saveProject']);
 
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
