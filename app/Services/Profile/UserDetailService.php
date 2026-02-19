@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 
 class UserDetailService
 {
-    public function updateUserDetails(Company $companyInfo, $userId, array $data): void
+    public function updateUserDetails(?Company $companyInfo, $userId, array $data): void
     {
         // Implementation for updating user details
 
@@ -24,8 +24,8 @@ class UserDetailService
         }
 
         $userDetailsData = [
-            'company_id' => $companyInfo->id,
-            'company'    => $companyInfo->company,
+            'company_id' => $companyInfo?->id ?? null,
+            'company'    => $companyInfo?->company ?? null,
             'first_name' => $data['first_name'],
             'last_name'  => $data['last_name'],
             'phone'      => $data['phone'],

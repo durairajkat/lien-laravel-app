@@ -1,14 +1,28 @@
-<?php
-
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Model;
-
-/**
- * Class ProjectTask for project_tasks table
- * @package App\Models
- */
-class ProjectTask extends Model
-{
-    //
-}
+<?php
+
+namespace App\Models;
+
+
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class ProjectTask extends Model
+{
+    use SoftDeletes;
+    
+    protected $fillable = [
+        'project_id',
+        'task_action_id',
+        'job_file_id',
+        'task_name',
+        'due_date',
+        'complete_date',
+        'email_alert',
+        'comment',
+        'assigned_to',
+        'assigned_by',
+        'assigned_at',
+        'status'
+    ];
+}
+

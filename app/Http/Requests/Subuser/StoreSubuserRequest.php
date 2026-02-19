@@ -26,7 +26,7 @@ class StoreSubuserRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'company_id' => CommonValidationRules::companyId(),
+            // 'company_id' => CommonValidationRules::companyId(),
 
             'first_name' => ['required', 'string', 'max:50'],
             'last_name'  => ['required', 'string', 'max:50'],
@@ -38,7 +38,7 @@ class StoreSubuserRequest extends FormRequest
             'phone' => CommonValidationRules::phone(),
 
             'email' => ['required', 'email', 'max:150', 'unique:users,email'],
-            'user_name' => ['required', 'string', 'max:100', 'unique:users,user_name'],
+            // 'user_name' => ['required', 'string', 'max:100', 'unique:users,user_name'],
 
             'password' => CommonValidationRules::password(),
         ];

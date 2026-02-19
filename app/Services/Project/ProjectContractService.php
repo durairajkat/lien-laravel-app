@@ -6,7 +6,7 @@ use App\Models\ProjectContract;
 
 class ProjectContractService
 {
-    public function saveOrUpdate(int $projectId, array $data): void
+    public function saveOrUpdate(int $projectId, array $data)
     {
         $contractData = collect([
             'base_amount' => $data['base_amount'] ?? null,
@@ -24,7 +24,7 @@ class ProjectContractService
         $extra  = (float) ($data['extra_amount'] ?? 0);
         $credit = (float) ($data['credits'] ?? 0);
 
-        ProjectContract::updateOrCreate(
+        return ProjectContract::updateOrCreate(
             ['project_id' => $projectId],
             array_merge(
                 $contractData->toArray(),

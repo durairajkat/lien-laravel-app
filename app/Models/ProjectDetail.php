@@ -36,7 +36,7 @@ class ProjectDetail extends Model implements Auditable
 
     public function state()
     {
-        return $this->belongsTo('App\Models\State', 'state_id');
+        return $this->belongsTo('App\Models\State', 'state_id')->select('id', 'name', 'country_id', 'code', 'short_code');
     }
 
 
@@ -55,7 +55,8 @@ class ProjectDetail extends Model implements Auditable
 
     public function project_contract()
     {
-        return $this->belongsTo('App\Models\ProjectContract', 'id', 'project_id');
+        return $this->belongsTo('App\Models\ProjectContract', 'id', 'project_id')
+        ->select('id', 'project_id', 'base_amount', 'extra_amount', 'credits', 'waiver', 'total_claim_amount', 'job_no', 'general_description');
     }
 
 
@@ -72,11 +73,8 @@ class ProjectDetail extends Model implements Auditable
     }
 
     /**
-
      * Relation with industry_contracts table
-
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-
      */
 
     public function industry_contract()
@@ -88,11 +86,8 @@ class ProjectDetail extends Model implements Auditable
 
 
     /**
-
      * Relation with tier_table table
-
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-
      */
 
     public function tier()
@@ -104,27 +99,19 @@ class ProjectDetail extends Model implements Auditable
 
 
     /**
-
      * Relation with project_dates table
-
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
-
      */
 
     public function project_date()
     {
 
-        return $this->hasMany('App\Models\ProjectDates', 'project_id');
+        return $this->hasMany('App\Models\ProjectDates', 'project_id')->select('id', 'project_id', 'date_id', 'date_value');
     }
 
-
-
     /**
-
      * Relation with industry_contacts
-
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
-
      */
 
     public function industryContacts()
@@ -133,26 +120,18 @@ class ProjectDetail extends Model implements Auditable
         return $this->hasMany('App\Models\ProjectIndustryContactMap', 'projectId', 'id');
     }
 
-
-
     /**
-
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-
      */
 
     public function originalCustomer()
     {
 
-        return $this->belongsTo('App\Models\CustomerCode', 'customer_id');
+        return $this->belongsTo('App\Models\CustomerCode', 'customer_id')->select('id', 'name', 'description');
     }
 
-
-
     /**
-
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-
      */
 
     public function jobInfo()
@@ -160,4 +139,15 @@ class ProjectDetail extends Model implements Auditable
 
         return $this->belongsTo('App\Models\JobInfo', 'id', 'project_id');
     }
+
+    public function tasks()
+    {
+        return $this->hasMany('App\Models\ProjectTask', 'project_id', 'id')->select('id', 'project_id','task_action_id','task_name', 'complete_date','comment', 'email_alert','assigned_to','assigned_by', 'assigned_at', 'status');
+    }
+
+    public function documents()
+    {
+        return $this->hasMany('App\Models\ProjectDocument', 'project_id', 'id')->select('id', 'project_id', 'title', 'notes', 'date', 'filename');
+    }
+
 }

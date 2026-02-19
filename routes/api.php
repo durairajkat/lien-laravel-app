@@ -14,6 +14,7 @@ use App\Http\Controllers\Api\V1\master\CountyApiCountroller;
 use App\Http\Controllers\Api\V1\master\ProjectRoleApiController;
 use App\Http\Controllers\Api\V1\master\ProjectTypeApiController;
 use App\Http\Controllers\Api\V1\master\StateApiController;
+use App\Http\Controllers\Api\V1\master\TaskActionController;
 use App\Http\Controllers\Api\V1\Profile\ProfileController;
 use App\Http\Controllers\Api\V1\Project\CustomerContactController;
 use App\Http\Controllers\Api\V1\Project\DeadlineApiController;
@@ -53,6 +54,7 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('sub-users/{sub_user}', [SubUserController::class, 'view']);
     Route::apiResource('sub-users', SubUserController::class)
         ->only(['store', 'update', 'destroy']);
+    Route::get('sub-users-all', [SubUserController::class, 'getAllSubUser']);
 
     Route::post('ai/parse-document', [AiFileReaderController::class, 'readDocument']);
     Route::get('ai/document-result/{fileId}', [AiFileReaderController::class, 'getResult']);
@@ -63,6 +65,8 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('/project-types', [ProjectTypeApiController::class, 'index']);
     Route::get('/project-roles', [ProjectRoleApiController::class, 'index']);
     Route::get('get-contact-roles', [ContactRoleController::class, 'index']);
+    Route::get('task-actions',[TaskActionController::class, 'index'] );
+
     Route::get('/customer-contacts/{project_id}', [CustomerContactController::class, 'index']);
     Route::post('/check-project-roles-customers', [ProjectController::class, 'checkProjectRole']);
     Route::post('/remedy-dates', [DeadlineApiController::class, 'getRemedyDates']);
@@ -72,6 +76,10 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::post('/upload-customer-contact-excel', [ExcelUploadController::class, 'uploadCustomerContact']);
 
     Route::post('/save-project', [ProjectApiController::class, 'saveProject']);
+    /** Projects */
+    Route::get('/total-project-count', [ProjectApiController::class, 'totalCount']);
+    Route::get('/get-used-states', [ProjectApiController::class, 'getUsedStates']);
+    Route::get('/projects', [ProjectApiController::class, 'index']);
 
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
 });

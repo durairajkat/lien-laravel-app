@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Subuser\StoreSubuserRequest;
 use App\Http\Requests\Subuser\UpdateSubUserRequest;
+use App\Http\Resources\master\CountyResource;
 use App\Http\Resources\SubUserResource;
 use App\Http\Resources\SubUserInfoResource;
 use App\Models\Company;
@@ -78,6 +79,12 @@ class SubUserController extends Controller
         ]);
     }
 
+
+    public function getAllSubUser()
+    {
+        return CountyResource::collection(SubUser::select('id', 'name')->where('parent_id', auth()->id())->get());
+    }
+
     /**
      * -----------------------------
      * Create Sub User
@@ -87,20 +94,25 @@ class SubUserController extends Controller
     public function store(StoreSubuserRequest $request)
     {
         $data = $request->validated();
+
         $data['name'] = trim($data['first_name'] . ' ' . $data['last_name']);
+        $data['user_name'] = trim($data['first_name'] . ' ' . $data['last_name']).'_'.Auth::id();
         $data['created_by'] = Auth::id();
         $data['role'] = '6';
         $data['status'] = '0';
         $data['parent_id'] = Auth::id();
         $subUser = SubUser::create($data);
+        if (isset($data['company_id'])) 
+        {
+            $companyInfo = Company::findOrFail($data['company_id']);
+        }
 
-        $companyInfo = Company::findOrFail($data['company_id']);
-
-        $this->userDetailsService->updateUserDetails($companyInfo, $subUser->id, $data);
+        $this->userDetailsService->updateUserDetails($companyInfo ?? null, $subUser->id, $data);
 
         return response()->json([
             'message' => 'Sub user created successfully',
             'data'    => $subUser,
+            'status' => true,
         ], 201);
     }
 

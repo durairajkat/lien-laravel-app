@@ -27,7 +27,7 @@ class DeadlineService
                     ->where('date_id', $remedyDateId)->first();
             } else {
                 if(!empty($furnishingDates)) {
-                    $dateSelected = $furnishingDates[$remedyDateId];
+                    $dateSelected = $furnishingDates[$remedyDateId] ?? '';
                 }
             }
 
