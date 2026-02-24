@@ -21,6 +21,7 @@ use App\Http\Controllers\Api\V1\Project\DeadlineApiController;
 use App\Http\Controllers\Api\V1\Project\ProjectApiController;
 use App\Http\Controllers\Api\V1\Project\ProjectContactController;
 use App\Http\Controllers\Api\V1\SubUserController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ExcelUploadController;
 
 /*
@@ -73,6 +74,9 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::post('/deadline-info', [DeadlineApiController::class, 'getDeadlineInfo']);
     /** Contact */
     Route::get('/project-contacts-all', [ProjectContactController::class, 'index']);
+    Route::get('/fetch-companies', [ContactController::class, 'fetchCompanies']);
+    Route::post('/save-customer-contact', [ProjectContactController::class, 'saveCustomerContact']);
+    Route::post('/save-project-contact', [ProjectContactController::class, 'saveProjectContact']);
     Route::post('/upload-customer-contact-excel', [ExcelUploadController::class, 'uploadCustomerContact']);
 
     Route::post('/save-project', [ProjectApiController::class, 'saveProject']);
@@ -80,6 +84,7 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('/total-project-count', [ProjectApiController::class, 'totalCount']);
     Route::get('/get-used-states', [ProjectApiController::class, 'getUsedStates']);
     Route::get('/projects', [ProjectApiController::class, 'index']);
+    Route::get("/project", [ProjectApiController::class, 'view']);
 
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
 });

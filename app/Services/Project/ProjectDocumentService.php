@@ -10,7 +10,7 @@ class ProjectDocumentService
     public function storeDocument($request, $projectId)
     {
         $uploaded = [];
-            ProjectDocument::where('project_id', $projectId)->delete();
+            ProjectDocument::where('project_id', $projectId)->delete(); // this is now used for create, if this used in edit need to modify this delete
             foreach ($request->file('documents') as $file) {
 
                 //  Create folder name

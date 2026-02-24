@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class ProjectTask extends Model
 {
     use SoftDeletes;
-    
+
     protected $fillable = [
         'project_id',
         'task_action_id',
@@ -24,5 +24,9 @@ class ProjectTask extends Model
         'assigned_at',
         'status'
     ];
-}
 
+    public function actionType()
+    {
+        return $this->belongsTo("App\Models\Master\TaskAction", "task_action_id");
+    }
+}

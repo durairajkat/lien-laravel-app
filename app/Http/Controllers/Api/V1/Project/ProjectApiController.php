@@ -4,7 +4,8 @@ namespace App\Http\Controllers\Api\V1\Project;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Project\ProjectSaveRequest;
-use App\Models\Company;
+use App\Http\Requests\ProjectViewRequest;
+use App\Http\Resources\Project\ProjectViewResource;
 use App\Models\ProjectDates;
 use App\Models\ProjectDetail;
 use App\Models\ProjectIndustryContactMap;
@@ -116,6 +117,7 @@ class ProjectApiController extends Controller
                 'zip' => $request->jobZip ?? null,
                 'county_id' => $request->jobCountyId ?? null,
                 'description' => $request->jobName ?? null,
+                'customer_contract_id' => $request->selectedCustomerContacts ?? null,
             ]; // this will insert wizard project details and project job description
 
             $project = ProjectDetail::create($ins);
@@ -146,115 +148,19 @@ class ProjectApiController extends Controller
                 'job_no' => $request->jobProjectNumber,
             ]);
 
-            /** insert Project customer contacts */
-            $customer_contacts = $request->customerContacts ? json_decode($request->customerContacts, true) : [];
-            $selected_contacts = $request->selectedCustomerContacts ? json_decode($request->selectedCustomerContacts, true) : '';
-            if (!empty($customer_contacts) && $selected_contacts) {
-                foreach ($customer_contacts as $cont) {
-                    if (!$cont['company']) {
-                        continue;
-                    }
-
-                    $cust_ins = [
-                        'website' => $cont['website'] ?? null,
-                        'address' => $cont['address'] ?? null,
-                        'city' => $cont['city'] ?? null,
-                        'state_id' => $cont['state_id'] ?? null,
-                        'zip' => $cont['zip'] ?? null,
-                        'phone' => $cont['phone'] ?? null,
-                        'fax' => $cont['fax'] ?? null,
-                        'is_selected' => $selected_contacts['company'] == $cont['company'],
-                    ];
-
-                    $company = Company::updateOrCreate(
-                        ['user_id' => $user_id, 'project_id' => $project->id, 'company' => $cont['company']],
-                        $cust_ins
-                    );
-                    /**  insert in companyContacts */
-                    $contacts = $cont['contacts'] ?? [];
-                    $contact_ins = [];
-                    foreach ($contacts as $contact) {
-                        $contact_ins[] = [
-                            'user_id' => $user_id,
-                            'type' => '0',
-                            'role_id' => $contact['role_id'],
-                            'first_name' => $contact['firstName'] ?? null,
-                            'last_name' => $contact['lastName'] ?? null,
-                            'email' => $contact['email'] ?? null,
-                            'phone' => $contact['directPhone'] ?? null,
-                            'cell' => $contact['cell'] ?? null,
-                        ];
-                    }
-                    $company->contacts()->createMany($contact_ins);
-                }
-            }
-
-            /** insert project contacts */
-            $projectContacts = $request->projectContacts ? json_decode($request->projectContacts, true) : [];
-            if (!empty($projectContacts)) {
-                $newContacts = collect($projectContacts)
-                    ->filter(fn($data) => !empty($data['is_new']))
-                    ->values(); // reset index
-
-                if ($newContacts->isNotEmpty()) {
-                    foreach ($newContacts as $contact) {
-                        if (!$contact['company']) {
-                            continue;
-                        }
-                        // insert in company
-                        $con_ins = [
-                            'website' => $contact['website'] ?? null,
-                            'address' => $contact['address'] ?? null,
-                            'city' => $contact['city'] ?? null,
-                            'state_id' => $contact['state_id'] ?? null,
-                            'zip' => $contact['zip'] ?? null,
-                            'phone' => $contact['phone'] ?? null,
-                            'fax' => $contact['fax'] ?? null,
-                            'user_id' => $user_id,
-                            'company' => $contact['company'],
-                            'contact_type' => 'project'
-                        ];
-                        $company = Company::create($con_ins);
-
-                        //insert in company contact
-                        $contacts = $contact['contacts'] ?? [];
-                        $project_contact_ins = [];
-                        foreach ($contacts as $tmp) {
-                            $project_contact_ins[] = [
-                                'user_id' => $user_id,
-                                'type' => '1',
-                                'role_id' => $tmp['role_id'],
-                                'contact_role_id' => $contact['role_id'] ?? null,
-                                'first_name' => $tmp['firstName'] ?? null,
-                                'last_name' => $tmp['lastName'] ?? null,
-                                'email' => $tmp['email'] ?? null,
-                                'phone' => $tmp['directPhone'] ?? null,
-                                'cell' => $tmp['cell'] ?? null,
-                            ];
-                        }
-                        $company->contacts()->createMany($project_contact_ins);
-                    }
-                }
-            }
             $selectedProjectContacts = $request->selectedProjectContacts ? json_decode($request->selectedProjectContacts, true) : [];
             if (!empty($selectedProjectContacts)) {
                 ProjectIndustryContactMap::where('projectId', $project->id)->delete();
                 foreach ($selectedProjectContacts as $pro) {
-                    $companyContacts = company::where('user_id', $user_id)->where('company', $pro['company'])
-                        ->where('contact_type', 'project')->first();
-
-                    if (!empty($companyContacts)) {
-                        ProjectIndustryContactMap::create([
-                            'projectId' => $project->id,
-                            'company_contact_id' => $companyContacts->id
-                        ]);
-                    }
+                    ProjectIndustryContactMap::create([
+                        'projectId' => $project->id,
+                        'contactId' => $pro
+                    ]);
                 }
             }
+
             if ($request->has('documents') && !empty($request->has('documents'))) {
-
                 $uploaded = $this->projectDocumentService->storeDocument($request, $project->id); // returns array
-
             }
             /** Inser Task data */
             $this->projectTaskService->saveProjectTask($request, $project);
@@ -281,5 +187,27 @@ class ProjectApiController extends Controller
             'status' => true,
             'data' => $states,
         ], 200);
+    }
+
+    public function view(ProjectViewRequest $request)
+    {
+        $projectId = $request->projectId;
+        $data = ProjectDetail::with([
+            'tasks',
+            'documents',
+            'project_contract',
+            'project_date',
+            'jobInfo',
+            'project_type',
+            'countyInfo',
+            'customer_contract',
+            'industryContacts',
+            'originalCustomer',
+            'state',
+            'role'
+        ])
+            ->where('id', $projectId)
+            ->first();
+        return new ProjectViewResource($data);
     }
 }
