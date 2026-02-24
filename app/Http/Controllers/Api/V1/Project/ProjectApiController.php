@@ -75,7 +75,7 @@ class ProjectApiController extends Controller
         return response()->json([
             'success' => true,
             'data' => $projects,
-            'overall_total' => $overallTotal, // 🔥 important
+            'overall_total' => $overallTotal,
         ]);
     }
 

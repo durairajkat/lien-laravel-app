@@ -21,6 +21,7 @@ use App\Http\Controllers\Api\V1\Project\DeadlineApiController;
 use App\Http\Controllers\Api\V1\Project\ProjectApiController;
 use App\Http\Controllers\Api\V1\Project\ProjectContactController;
 use App\Http\Controllers\Api\V1\SubUserController;
+use App\Http\Controllers\Api\V1\Tasks\TaskController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ExcelUploadController;
 
@@ -85,6 +86,10 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('/get-used-states', [ProjectApiController::class, 'getUsedStates']);
     Route::get('/projects', [ProjectApiController::class, 'index']);
     Route::get("/project", [ProjectApiController::class, 'view']);
+    /** Tasks */
+    Route::get('/tasks/count', [TaskController::class, 'count']);
+    Route::get('/tasks', [TaskController::class, 'index']);
+    Route::get('/tasks/{task}', [TaskController::class, 'view']);
 
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
 });

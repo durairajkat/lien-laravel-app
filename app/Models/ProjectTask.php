@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -28,5 +28,20 @@ class ProjectTask extends Model
     public function actionType()
     {
         return $this->belongsTo("App\Models\Master\TaskAction", "task_action_id");
+    }
+
+    public function assignedToUser()
+    {
+        return $this->belongsTo(User::class, 'assigned_to')->select('id', 'name', 'email');
+    }
+
+    public function assignedByUser()
+    {
+        return $this->belongsTo(User::class, 'assigned_by')->select('id', 'name', 'email');
+    }
+
+    public function project()
+    {
+        return $this->belongsTo(ProjectDetail::class, 'project_id')->select('id', 'project_name');
     }
 }
