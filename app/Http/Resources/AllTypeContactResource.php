@@ -16,10 +16,12 @@ class AllTypeContactResource extends JsonResource
             "address" =>  $this->company?->company,
             "city" =>  $this->company?->company,
             "state_id" =>  $this->company?->state_id,
+            "state" =>  $this->company?->state?->name,
             "zip" =>  $this->company?->zip,
             "phone" =>  $this->company?->phone,
             "fax" =>  $this->company?->fax,
             "companyId" => $this->company?->id,
+            "created_at" => $this->contacts?->created_at,
             "contacts" => [
                 [
                     "role_id" => $this->contacts?->contact_role_id,

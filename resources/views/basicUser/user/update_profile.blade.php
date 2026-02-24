@@ -314,17 +314,17 @@
                                                         <td>
                                                             <a href="javascript:void(0)" class="addSubUser"
                                                                 data-subuser_id="{{ $subuser->id }}" data-type="edit"
-                                                                data-first_name="{{ $subuser->details->first_name }}"
-                                                                data-last_name="{{ $subuser->details->last_name }}"
-                                                                data-company="{{ $subuser->mapcompanyContacts->company->company }}"
-                                                                data-address="{{ $subuser->mapcompanyContacts->address }}"
-                                                                data-city="{{ $subuser->mapcompanyContacts->city }}"
-                                                                data-state="{{ $subuser->mapcompanyContacts->state_id }}"
-                                                                data-phone="{{ $subuser->mapcompanyContacts->phone }}"
-                                                                data-zip="{{ $subuser->mapcompanyContacts->zip }}"
-                                                                data-email="{{ $subuser->email }}"
-                                                                data-username="{{ $subuser->user_name }}"
-                                                                data-password="{{ $subuser->password }}">EDIT
+                                                                data-first_name="{{ $subuser->details->first_name ?? '' }}"
+                                                                data-last_name="{{ $subuser->details->last_name ?? '' }}"
+                                                                data-company="{{ $subuser->mapcompanyContacts->company->company ?? '' }}"
+                                                                data-address="{{ $subuser->mapcompanyContacts->address ?? '' }}"
+                                                                data-city="{{ $subuser->mapcompanyContacts->city ?? '' }}"
+                                                                data-state="{{ $subuser->mapcompanyContacts->state_id ?? '' }}"
+                                                                data-phone="{{ $subuser->mapcompanyContacts->phone ?? '' }}"
+                                                                data-zip="{{ $subuser->mapcompanyContacts->zip ?? '' }}"
+                                                                data-email="{{ $subuser->email ?? '' }}"
+                                                                data-username="{{ $subuser->user_name ?? '' }}"
+                                                                data-password="{{ $subuser->password ?? '' }}">EDIT
                                                             </a> |
                                                             <a href="javascript:void(0)" class="delete"
                                                                 data-id="{{ $subuser->id }}">DELETE

@@ -90,6 +90,9 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('/tasks/count', [TaskController::class, 'count']);
     Route::get('/tasks', [TaskController::class, 'index']);
     Route::get('/tasks/{task}', [TaskController::class, 'view']);
+    /** Contact */
+    Route::get('/contacts/total-count', [ContactController::class, 'totalCount']);
+    Route::get('/contacts', [ContactController::class, 'index']);
 
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
 });
