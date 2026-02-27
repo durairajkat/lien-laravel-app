@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\PasswordController;
 use App\Http\Controllers\Api\RegisterController;
 use App\Http\Controllers\Api\V1\AiFileReaderController;
+use App\Http\Controllers\Api\V1\DocumentApiController;
 use App\Http\Controllers\Api\V1\master\ContactRoleController;
 use App\Http\Controllers\Api\V1\master\CountryApiController;
 use App\Http\Controllers\Api\V1\master\CountyApiCountroller;
@@ -93,6 +94,10 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     /** Contact */
     Route::get('/contacts/total-count', [ContactController::class, 'totalCount']);
     Route::get('/contacts', [ContactController::class, 'index']);
+    /** Documents */
+    Route::get('/documents', [DocumentApiController::class, 'index']);
+    Route::post('/document/delete', [DocumentApiController::class, 'deleteDocument']);
+    Route::post('/documents/upload', [DocumentApiController::class, 'addDocument']);
 
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
 });
