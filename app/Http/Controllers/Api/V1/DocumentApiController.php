@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api\V1;
 
 use App\Http\Controllers\Controller;
 use App\Http\Resources\Project\ProjectDocumentDetailCollectionResource;
+use App\Http\Resources\ProjectDocumentResource;
 use App\Models\ProjectDetail;
 use App\Models\ProjectDocument;
 use App\Services\Project\ProjectDocumentService;
@@ -40,6 +41,13 @@ class DocumentApiController extends Controller
     public function deleteDocument(Request $request)
     {
         $document = ProjectDocument::find($request->documentId);
+        $projectId = $document?->project_id;
+
+         if (!$projectId) {
+            return response()->json([
+                'message' => 'Project not found for the document'
+            ], 404);
+        }
         if (!$document) {
             return response()->json([
                 'message' => 'Document not found'
@@ -52,8 +60,12 @@ class DocumentApiController extends Controller
 
         $document->delete();
 
+        $documenta = ProjectDocument::where('project_id', $projectId)->get();
+
         return response()->json([
-            'message' => 'Document deleted successfully'
+            'message' => 'Document deleted successfully',
+            'status' => true,
+            'data' => ProjectDocumentResource::collection($documenta)
         ], 200);
     }
 

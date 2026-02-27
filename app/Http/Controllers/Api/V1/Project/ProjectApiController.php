@@ -120,10 +120,18 @@ class ProjectApiController extends Controller
                 'customer_contract_id' => $request->selectedCustomerContacts ?? null,
             ]; // this will insert wizard project details and project job description
 
-            $project = ProjectDetail::create($ins);
+            if ($request->projectId) {
+                // UPDATE
+                $project = ProjectDetail::findOrFail($request->projectId);
+                $project->update($ins);
+                info(' Project Updated', ['projectId' => $project->id]);
+            } else {
+                // CREATE
+                $project = ProjectDetail::create($ins);
+            }
             /**  Insert in Project Dates */
             $dates = $request->furnishingDates ? json_decode($request->furnishingDates, true) : [];
-            info($dates);
+            
             if (!empty($dates) && is_array($dates)) {
                 foreach ($dates as $key => $date) {
                     $data[$key] = $date;

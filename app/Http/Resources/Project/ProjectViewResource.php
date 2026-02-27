@@ -5,6 +5,7 @@ namespace App\Http\Resources\Project;
 use App\Http\Resources\master\CountyResource;
 use App\Http\Resources\master\ProjectRoleResource;
 use App\Http\Resources\master\ProjectTypeResource;
+use App\Http\Resources\ProjectDocumentResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class ProjectViewResource extends JsonResource
@@ -17,13 +18,15 @@ class ProjectViewResource extends JsonResource
      */
     public function toArray($request)
     {
+        info('ProjectViewResource', ['project' => $this->project_date]);
         return [
             'id' => $this->id,
             'projectName' => $this->project_name,
             'status' => $this->status,
             'user_id' => $this->user_id,
             'stateId' => $this->state_id,
-            'countryId' => $this->county_id,
+            'countryId' => $this->state?->country_id,
+            'countyId' => $this->county_id,
             'projectTypeId' => $this->project_type_id,
             'customerTypeId' =>  $this->customer_id,
             'roleId' => $this->role_id,
@@ -35,8 +38,10 @@ class ProjectViewResource extends JsonResource
             'startDate' => $this->start_date,
             'endDate' => $this->esitmated_end_date,
             'created_at' => $this->created_at,
+            'selectedCustomerContacts' => $this->customer_contract_id,
+            'selectedProjectContacts' => $this->industryContacts?->pluck('contactId') ?? [],
             'tasks' => TaskResource::collection($this->tasks),
-            'documents' => $this->whenLoaded('documents'),
+            'uploaded_documents' => ProjectDocumentResource::collection($this->whenLoaded('documents')),
             'contracts' => new ProjectContractResource(
                 $this->whenLoaded('project_contract')
             ),
@@ -69,6 +74,13 @@ class ProjectViewResource extends JsonResource
                 'jobInfo',
                 fn() => $this->jobInfo?->signature
             ),
+            'dates' => $this->whenLoaded(
+                'project_date',
+                fn() => $this->project_date->mapWithKeys(function ($item) {
+                    return [$item->date_id => $item->date_value];
+                })
+            ),
+             
         ];
     }
 }

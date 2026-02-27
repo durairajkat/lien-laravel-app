@@ -49,6 +49,7 @@ class TaskController extends Controller
             ->select(
                 'project_tasks.id',
                 'project_tasks.task_name',
+                'project_tasks.task_action_id',
                 'project_tasks.due_date',
                 'project_tasks.complete_date',
                 'project_tasks.status',
@@ -59,6 +60,7 @@ class TaskController extends Controller
                 'project_tasks.assigned_by',
                 'project_tasks.assigned_to',
                 'project_tasks.created_at',
+                'project_tasks.email_alert',
                 DB::raw("DATEDIFF(project_tasks.due_date, CURDATE()) as days_difference")
             );
 
@@ -78,6 +80,9 @@ class TaskController extends Controller
         }
         $query->when($request->action_id, function ($q) use ($request) {
             $q->where('project_tasks.task_action_id', $request->action_id);
+        });
+        $query->when($request->projectId, function ($q) use ($request) {
+            $q->where('project_tasks.project_id', $request->projectId);
         });
         /* -------- SORT -------- */
         $sortBy = $request->sort_by ?? 'project_tasks.created_at';

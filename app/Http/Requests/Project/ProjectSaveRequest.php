@@ -47,6 +47,9 @@ class ProjectSaveRequest extends FormRequest
                 ->where('project_type_id', $this->projectTypeId)
                 ->where('customer_id', $this->customerTypeId)
                 ->where('role_id', $this->roleId)
+                ->when($this->projectId, function ($query) {
+                    $query->where('id', '!=', $this->projectId);
+                })
                 ->exists();
 
             if ($exists) {

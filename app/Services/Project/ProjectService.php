@@ -50,7 +50,7 @@ class ProjectService
             ];
 
             $jobInfo = JobInfo::updateOrCreate(['project_id' => $project->id], $ins_job);
-            if ($jobInfo && $request->has('doucments') && !empty($request->has('docuemnts'))) {
+            if ($jobInfo && $request->has('documents') && !empty($request->has('documents'))) {
                 $files = ProjectDocument::where('project_id', $project->id)->get();
                 if (!empty($files)) {
                     JobInfoFiles::where('job_info_id', $jobInfo->id)->delete();
