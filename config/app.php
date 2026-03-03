@@ -165,7 +165,6 @@ return [
         /*
          * Package Service Providers...
          */
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         // Laravel\Cashier\CashierServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,

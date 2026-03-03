@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
@@ -19,6 +20,11 @@ class MapCompanyContact extends Model
         'email',
         'website',
     ];
+
+    public function state()
+    {
+        return $this->belongsTo('App\Models\State');
+    }
 
     public function company()
     {
@@ -49,6 +55,4 @@ class MapCompanyContact extends Model
     {
         return $this->belongsTo('App\Models\CompanyContact', 'company_contact_id', 'id');
     }
-
 }
-

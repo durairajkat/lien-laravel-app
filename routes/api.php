@@ -94,6 +94,7 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     /** Contact */
     Route::get('/contacts/total-count', [ContactController::class, 'totalCount']);
     Route::get('/contacts', [ContactController::class, 'index']);
+     Route::get('/customer-contacts', [CustomerContactController::class, 'customerContacts']);
     /** Documents */
     Route::get('/documents', [DocumentApiController::class, 'index']);
     Route::post('/document/delete', [DocumentApiController::class, 'deleteDocument']);

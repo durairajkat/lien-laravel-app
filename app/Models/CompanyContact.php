@@ -36,6 +36,11 @@ class CompanyContact extends Model
 
     }
 
+    public function contactRole()
+    {
+        return $this->belongsTo('App\Models\Master\ContactRole', 'role_id', 'id');
+    }
+
 
 }
 
