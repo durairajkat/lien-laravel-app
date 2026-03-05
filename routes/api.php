@@ -100,6 +100,7 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('/documents', [DocumentApiController::class, 'index']);
     Route::post('/document/delete', [DocumentApiController::class, 'deleteDocument']);
     Route::post('/documents/upload', [DocumentApiController::class, 'addDocument']);
-
+    /** Deadlines */
+    Route::get('/deadlines', [DeadlineApiController::class, 'getAllDeadlines']);
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
 });

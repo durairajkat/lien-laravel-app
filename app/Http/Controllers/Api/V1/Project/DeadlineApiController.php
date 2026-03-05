@@ -195,4 +195,179 @@ class DeadlineApiController extends Controller
             'message'         => 'Deadline Info Retrieved Successfully',
         ], 200);
     }
+
+    public function getAllDeadlines(Request $request)
+    {
+
+        $answerMap = [
+            'Yes' => ['Yes', ''],
+            'Commercial' => ['Commercial', ''],
+            'No' => ['No', ''],
+            'Residential' => ['Residential', ''],
+        ];
+
+        $finalData = [];
+
+        /**
+         * Get all projects
+         */
+        $projects = ProjectDetail::select(
+            'id',
+            'state_id',
+            'project_type_id',
+            'role_id',
+            'customer_id',
+            'answer1',
+            'project_name'
+        )->where('user_id', auth()->id())->get();
+
+        /**
+         * Tier tables
+         */
+        $tierTables = TierTable::select('id', 'role_id', 'customer_id')
+            ->get()
+            ->keyBy(fn($t) => $t->role_id . '_' . $t->customer_id);
+
+        /**
+         * Remedies grouped by state + project type
+         */
+        $remedies = Remedy::select('id', 'state_id', 'project_type_id')
+            ->get()
+            ->groupBy(fn($r) => $r->state_id . '_' . $r->project_type_id);
+
+        /**
+         * Active remedy dates
+         */
+        $remedyDateIds = RemedyDate::where('status', 1)->pluck('id');
+
+        /**
+         * Tier remedy steps
+         */
+        $tierSteps = TierRemedyStep::get()->groupBy('tier_id');
+        /**
+         * Remedy steps
+         */
+        $remedySteps = RemedyStep::with('getRemedy')
+            ->where('status', 1)
+            ->whereIn('remedy_date_id', $remedyDateIds)
+            ->get()
+            ->keyBy('id');
+
+        if ($projects->isEmpty()) {
+            return response()->json([
+                'status' => true,
+                'data' => [
+                    'deadlines' => []
+                ],
+                'message' => 'No Projects Found'
+            ]);
+        }
+
+        $finalData = [];
+
+        foreach ($projects as $project) {
+
+            $tierKey = $project->role_id . '_' . $project->customer_id;
+
+            if (!isset($tierTables[$tierKey])) {
+                continue;
+            }
+
+            $tierId = $tierTables[$tierKey]->id;
+
+            if (!isset($tierSteps[$tierId])) {
+                continue;
+            }
+
+            $remedyKey = $project->state_id . '_' . $project->project_type_id;
+
+            if (!isset($remedies[$remedyKey])) {
+                continue;
+            }
+
+            $remedyIds = $remedies[$remedyKey]->pluck('id')->flip();
+
+            $steps = $tierSteps[$tierId];
+
+            if (isset($answerMap[$project->answer1])) {
+                $steps = $steps->whereIn('answer1', $answerMap[$project->answer1]);
+            }
+
+            foreach ($steps as $step) {
+
+                if (!isset($remedySteps[$step->remedy_step_id])) {
+                    continue;
+                }
+
+                $dline = $remedySteps[$step->remedy_step_id];
+
+                if (!isset($remedyIds[$dline->remedy_id])) {
+                    continue;
+                }
+
+                /**
+                 * Calculate deadline
+                 */
+                $daysRemain = $this->deadlineService->calculateDaysRemaining(
+                    collect([$dline]),
+                    $project,
+                    []
+                );
+
+                $date = $daysRemain[0]['preliminaryDates'] ?? null;
+
+                if (!$date || strlen($date) < 6) {
+                    $daysRemaining = 'N/A';
+                    $isLate = false;
+                    $formattedDate = 'N/A';
+                    continue;
+                } else {
+
+                    $today = new \DateTime();
+                    $deadlineDate = new \DateTime($date);
+
+                    $diff = $today->diff($deadlineDate);
+
+                    $daysRemaining = $diff->format('%a');
+                    $isLate = $diff->format('%R') === '+';
+                    $formattedDate = date('M d, Y', strtotime($date));
+                }
+
+                $finalData[] = [
+                    'project_id' => $project->id,
+                    'project_name' => $project->project_name,
+                    'title' => $dline->getRemedy->remedy ?? '',
+                    'date' => $formattedDate,
+                    'is_late' => $isLate,
+                    'daysRemaining' => $daysRemaining,
+                    'remedies' => [
+                        'title' => $dline->getRemedy->remedy ?? '',
+                        'description' => $dline->short_description
+                    ],
+                    'requirement' => $dline->short_description
+                ];
+            }
+        }
+
+        $groupedData = collect($finalData)
+            ->groupBy('project_id')
+            ->map(function ($items, $projectId) {
+                $projectIsLate = $items->contains(function ($item) {
+                    return $item['is_late'] === true;
+                });
+                return [
+                    'project_id' => $projectId,
+                    'project_name' => $items->first()['project_name'] ?? '',
+                    'is_late' => $projectIsLate,
+                    'deadlines' => $items->values()
+                ];
+            })
+            ->values();
+
+        return response()->json([
+            'status' => true,
+            'data' => $groupedData,
+            'message' => 'All Project Deadlines Retrieved Successfully'
+        ]);
+    }
 }
