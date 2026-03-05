@@ -68,7 +68,7 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('/project-types', [ProjectTypeApiController::class, 'index']);
     Route::get('/project-roles', [ProjectRoleApiController::class, 'index']);
     Route::get('get-contact-roles', [ContactRoleController::class, 'index']);
-    Route::get('task-actions',[TaskActionController::class, 'index'] );
+    Route::get('task-actions', [TaskActionController::class, 'index']);
 
     Route::get('/customer-contacts/{project_id}', [CustomerContactController::class, 'index']);
     Route::post('/check-project-roles-customers', [ProjectController::class, 'checkProjectRole']);
@@ -94,7 +94,8 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     /** Contact */
     Route::get('/contacts/total-count', [ContactController::class, 'totalCount']);
     Route::get('/contacts', [ContactController::class, 'index']);
-     Route::get('/customer-contacts', [CustomerContactController::class, 'customerContacts']);
+    Route::get('/customer-contacts', [CustomerContactController::class, 'customerContacts']);
+    Route::post('/customer-contacts/delete', [CustomerContactController::class, 'deleteCustomerContact']);
     /** Documents */
     Route::get('/documents', [DocumentApiController::class, 'index']);
     Route::post('/document/delete', [DocumentApiController::class, 'deleteDocument']);

@@ -17,7 +17,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $password = '123456';
+        $password = Hash::make('123456');
 
         User::firstOrCreate(
             ['email' => 'superadmin@admin.com'],
@@ -26,7 +26,7 @@ class UserSeeder extends Seeder
 
         User::firstOrCreate(
             ['email' => 'devadmin@admin.com'],
-            ['name' => 'Dev Admin', 'user_name' => 'devadmin', 'password' => $password, 'role' => 1, 'is_dev' => true]
+            ['name' => 'Dev Admin', 'user_name' => 'devadmin', 'password' => $password, 'role' => 1]
         );
     }
 }

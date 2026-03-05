@@ -132,7 +132,7 @@ class StateSeeder extends Seeder
         foreach ($states as $s) {
             State::firstOrCreate(
                 ['short_code' => $s['short_code']],
-                ['name' => $s['name'], 'code' => $s['code'], 'created_at' => $now, 'updated_at' => $now]
+                ['name' => $s['name'], 'code' => $s['code'], 'created_at' => $now, 'updated_at' => $now, 'country_id' => 1]
             );
         }
     }

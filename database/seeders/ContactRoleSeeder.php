@@ -15,7 +15,7 @@ class ContactRoleSeeder extends Seeder
      */
     public function run()
     {
-         $roles = [
+        $roles = [
             'customer' => [
                 'CEO',
                 'President',
@@ -35,13 +35,17 @@ class ContactRoleSeeder extends Seeder
                 'Title Company',
             ],
         ];
-
+        ContactRole::truncate();
         foreach ($roles as $type => $roleList) {
             foreach ($roleList as $role) {
                 ContactRole::updateOrCreate(
-                    ['name' => $role],
-                    ['normalized_name' => StringHelper::normalizeString($role)],
-                    ['role_type' => $type]
+                    [
+                        'name' => $role,
+                        'role_type' => $type,
+                    ],
+                    [
+                        'normalized_name' => StringHelper::normalizeString($role),
+                    ]
                 );
             }
         }

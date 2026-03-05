@@ -35,17 +35,17 @@ class TierTableSeeder extends Seeder
         ];
 
         foreach ($tiers as $tier) {
-            TierTable::firstOrCreate(
+            TierTable::updateOrCreate(
                 [
-                    'role_id'          => $tier['role_id'],
-                    // 'customer_id'      => $tier['customer_id'],
-                    // 'tier_code'        => $tier['tier_code'],
-                    // 'tier_coverage_id' => $tier['tier_coverage_id'],
+                    'tier_code' => $tier['tier_code'], // unique column
                 ],
                 [
-                    'tier_limit' => $tier['tier_limit'],
-                    'created_at' => $now,
-                    'updated_at' => $now,
+                    'tier_limit'       => $tier['tier_limit'],
+                    'role_id'          => $tier['role_id'],
+                    'customer_id'      => $tier['customer_id'],
+                    'tier_coverage_id' => $tier['tier_coverage_id'],
+                    'updated_at'       => $now,
+                    'created_at'       => $now,
                 ]
             );
         }
