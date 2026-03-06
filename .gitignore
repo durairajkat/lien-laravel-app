@@ -6,10 +6,25 @@
 
 /storage/*.key
 # Laravel storage & cache
+
+
+# Ignore everything in storage except required folders
 /storage/*
+!/storage/app/
+!/storage/framework/
+!/storage/framework/cache/
+!/storage/framework/sessions/
+!/storage/framework/views/
+!/storage/logs/
+
+# Allow .gitignore files inside them
 !/storage/app/.gitignore
-!/storage/framework/.gitignore
+!/storage/framework/cache/.gitignore
+!/storage/framework/sessions/.gitignore
+!/storage/framework/views/.gitignore
 !/storage/logs/.gitignore
+
+
 /bootstrap/cache/*.php
 !/bootstrap/cache/.gitignore
 
