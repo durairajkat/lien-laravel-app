@@ -10,7 +10,7 @@
 !/storage/app/.gitignore
 !/storage/framework/.gitignore
 !/storage/logs/.gitignore
-/bootstrap/cache/*
+/bootstrap/cache/*.php
 !/bootstrap/cache/.gitignore
 
 /vendor
