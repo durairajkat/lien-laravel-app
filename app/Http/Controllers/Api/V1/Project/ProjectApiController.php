@@ -117,7 +117,7 @@ class ProjectApiController extends Controller
                 'zip' => $request->jobZip ?? null,
                 'county_id' => $request->jobCountyId ?? null,
                 'description' => $request->jobName ?? null,
-                'customer_contract_id' => $request->selectedCustomerContacts ?? null,
+                'customer_contract_id' => $request->selectedCustomerContacts ?: null,
             ]; // this will insert wizard project details and project job description
 
             if ($request->projectId) {
@@ -131,7 +131,7 @@ class ProjectApiController extends Controller
             }
             /**  Insert in Project Dates */
             $dates = $request->furnishingDates ? json_decode($request->furnishingDates, true) : [];
-            
+
             if (!empty($dates) && is_array($dates)) {
                 foreach ($dates as $key => $date) {
                     $data[$key] = $date;
@@ -147,14 +147,17 @@ class ProjectApiController extends Controller
                 }
             }
 
+            $contract_details = null;
             /** Project Contract */
-            $contract_details = $contractService->saveOrUpdate($project->id, [
-                'base_amount' => $request->baseContractAmount,
-                'extra_amount' => $request->additionalCosts,
-                'credits' => $request->paymentsCredits,
-                'general_description' => $request->materialServicesDescription,
-                'job_no' => $request->jobProjectNumber,
-            ]);
+            if (isset($request->baseContractAmount) && $request->baseContractAmount != 0) {
+                $contract_details = $contractService->saveOrUpdate($project->id, [
+                    'base_amount' => $request->baseContractAmount ?? 0,
+                    'extra_amount' => $request->additionalCosts ?? 0,
+                    'credits' => $request->paymentsCredits ?? 0,
+                    'general_description' => $request->materialServicesDescription,
+                    'job_no' => $request->jobProjectNumber,
+                ]);
+            }
 
             $selectedProjectContacts = $request->selectedProjectContacts ? json_decode($request->selectedProjectContacts, true) : [];
             if (!empty($selectedProjectContacts)) {
