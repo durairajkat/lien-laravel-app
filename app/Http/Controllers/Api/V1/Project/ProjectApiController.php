@@ -221,4 +221,22 @@ class ProjectApiController extends Controller
             ->first();
         return new ProjectViewResource($data);
     }
+
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'id' => 'required|integer',
+        ]);
+
+        $id = $request->input('id');
+
+        $project = ProjectDetail::find($id);
+
+        if (!$project) {
+            return response()->json(['message' => 'Project not found.'], 404);
+        }
+
+        $project->delete();
+        return response()->json(['message' => 'Project deleted successfully.']);
+    }
 }

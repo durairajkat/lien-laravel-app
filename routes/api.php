@@ -87,6 +87,7 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('/get-used-states', [ProjectApiController::class, 'getUsedStates']);
     Route::get('/projects', [ProjectApiController::class, 'index']);
     Route::get("/project", [ProjectApiController::class, 'view']);
+    Route::post("/project/delete", [ProjectApiController::class, 'delete']);
     /** Tasks */
     Route::get('/tasks/count', [TaskController::class, 'count']);
     Route::get('/tasks', [TaskController::class, 'index']);

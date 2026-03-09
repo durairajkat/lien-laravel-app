@@ -15,7 +15,9 @@ class TaskController extends Controller
     public function count()
     {
         $counts = DB::table('project_tasks')
-            ->whereNull('deleted_at')
+            ->join('project_details', 'project_details.id', '=', 'project_tasks.project_id')
+            ->whereNull('project_details.deleted_at')
+            ->whereNull('project_tasks.deleted_at')
             ->selectRaw("
                         COUNT(*) as total_count,
                         SUM(CASE 
@@ -39,6 +41,7 @@ class TaskController extends Controller
     {
         $baseQuery = ProjectTask::query()
             ->join('project_details', 'project_details.id', '=', 'project_tasks.project_id')
+            ->whereNull('project_details.deleted_at')
             ->where('project_details.user_id', auth()->id());
 
         $overallTotal = (clone $baseQuery)->count();
@@ -123,5 +126,4 @@ class TaskController extends Controller
             'data' => $task,
         ]);
     }
-
 }
