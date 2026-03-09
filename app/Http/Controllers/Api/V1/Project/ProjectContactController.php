@@ -58,6 +58,8 @@ class ProjectContactController extends Controller
             $contacts = $request->contacts;
             if (!empty($contacts) && is_array($contacts)) {
                 foreach ($contacts as $cont) {
+                    // edit only done for single contact not for more than, it need more need to alter this function
+                    
                     $cons_ins = [
                         'user_id' => $userId,
                         'contact_role_id' => $request->role_id ?? null,
@@ -69,8 +71,13 @@ class ProjectContactController extends Controller
                         'phone' => $cont['directPhone'] ?? null,
                         'cell' => $cont['cell'] ?? null,
                     ];
+                    if ($request->is_new) {
+                        $id = $cont['id'] ?? null;
+                        $companyContact = CompanyContact::where('id', $id)->update($contacts);
+                    } else {
+                        $companyContact = CompanyContact::Create($cons_ins);
+                    }
 
-                    $companyContact = CompanyContact::Create($cons_ins);
                     $map_ins = [
                         'company_id' => $companyIno->id,
                         'company_contact_id' => $companyContact->id,
@@ -84,7 +91,13 @@ class ProjectContactController extends Controller
                         'fax' => $request->fax ?? null,
                         'website' => $request->website ?? null,
                     ];
-                    MapCompanyContact::create($map_ins);
+
+                    if ($request->is_new) {
+                        MapCompanyContact::create($map_ins);
+                    } else {
+                        $map_id = $request->id ?? null;
+                        MapCompanyContact::where('id', $map_id)->update($map_ins);
+                    }
                 }
             }
         });
