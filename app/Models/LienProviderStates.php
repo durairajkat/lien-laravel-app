@@ -17,6 +17,11 @@ class LienProviderStates extends Model
      */
     public $timestamps = true;
 
+    protected $fillable = [
+        'lien_id',
+        'state_id'
+    ];
+
     public function state()
     {
         return $this->hasMany('App\Models\State', 'id', 'state_id');

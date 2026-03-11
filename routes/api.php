@@ -10,6 +10,7 @@ use App\Http\Controllers\Api\RegisterController;
 use App\Http\Controllers\Api\V1\AiFileReaderController;
 use App\Http\Controllers\Api\V1\CompanyController;
 use App\Http\Controllers\Api\V1\DocumentApiController;
+use App\Http\Controllers\Api\V1\Lien\LienAuthController;
 use App\Http\Controllers\Api\V1\master\ContactRoleController;
 use App\Http\Controllers\Api\V1\master\CountryApiController;
 use App\Http\Controllers\Api\V1\master\CountyApiCountroller;
@@ -109,3 +110,5 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::get('/deadlines', [DeadlineApiController::class, 'getAllDeadlines']);
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
 });
+/** attorney */
+Route::post('/attorney/signup', [LienAuthController::class, 'signup']);
