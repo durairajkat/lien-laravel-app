@@ -15,4 +15,11 @@ class StateApiController extends Controller
 
         return StateResource::collection($states);
     }
+
+    public function getAllStates()
+    {
+        $states = State::select('id', 'name', 'short_code')->distinct()->orderby('name')->get();
+
+        return StateResource::collection($states);
+    }
 }

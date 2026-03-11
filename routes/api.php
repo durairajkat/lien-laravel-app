@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\PasswordController;
 use App\Http\Controllers\Api\RegisterController;
 use App\Http\Controllers\Api\V1\AiFileReaderController;
+use App\Http\Controllers\Api\V1\CompanyController;
 use App\Http\Controllers\Api\V1\DocumentApiController;
 use App\Http\Controllers\Api\V1\master\ContactRoleController;
 use App\Http\Controllers\Api\V1\master\CountryApiController;
@@ -45,6 +46,9 @@ Route::post('login', [AuthController::class, 'login'])->name('api.login');
 Route::post('signup', [RegisterController::class, 'signup'])->name('api.signup');
 Route::post('/forgot-password', [PasswordController::class, 'forgot']);
 Route::post('/reset-password', [PasswordController::class, 'reset']);
+Route::get('/states/all', [StateApiController::class, 'getAllStates']);
+Route::get('/companies', [CompanyController::class, 'index']);
+
 
 Route::group(['middleware' => 'auth:sanctum'], function () {
     //profile routes
