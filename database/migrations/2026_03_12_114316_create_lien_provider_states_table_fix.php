@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLienProviderStatesTable extends Migration
+class CreateLienProviderStatesTableFix extends Migration
 {
     /**
      * Run the migrations.
@@ -16,15 +16,10 @@ class CreateLienProviderStatesTable extends Migration
         if (!Schema::hasTable('lien_provider_states')) {
             Schema::create('lien_provider_states', function (Blueprint $table) {
                 $table->id();
-
                 $table->unsignedBigInteger('lien_id');
                 $table->unsignedBigInteger('state_id');
-
                 $table->timestamps();
                 $table->softDeletes();
-
-                $table->index('lien_id', 'lien_provider_states_lien_id_index');
-                $table->index('state_id', 'lien_provider_states_state_id_index');
             });
         }
     }
@@ -36,6 +31,8 @@ class CreateLienProviderStatesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lien_provider_states');
+        if (Schema::hasTable('lien_provider_states')) {
+            Schema::dropIfExists('lien_provider_states');
+        }
     }
 }
