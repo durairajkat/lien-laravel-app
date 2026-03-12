@@ -215,10 +215,19 @@ class ProjectApiController extends Controller
             'industryContacts',
             'originalCustomer',
             'state',
-            'role'
+            'role',
+            'customer_contract.getContacts',
+            'user.lienUser',
+            'customer_contract.company',
+            'customer_contract.getContacts.contactRole',
+            'customer_contract',
+            'industryContacts.fetchMap',
+            'industryContacts.fetchMap.company',
+            'industryContacts.fetchMap.contacts'
         ])
             ->where('id', $projectId)
             ->first();
+
         return new ProjectViewResource($data);
     }
 

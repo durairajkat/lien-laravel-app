@@ -12,12 +12,12 @@ class ProjectIndustryContactMap extends Model
         'company_contact_id'
     ];
 
-    public function contacts()
-    {
+    // public function contacts()
+    // {
 
-        return $this->hasOne('App\Models\Contact','id','contactId');
+    //     return $this->hasOne('App\Models\Contact','id','contactId');
 
-    }
+    // }
 
 
     public function project()
@@ -31,7 +31,7 @@ class ProjectIndustryContactMap extends Model
 
     public function fetchMap() {
 
-        return $this->belongsTo('App\Models\MapCompanyContact','id');
+        return $this->belongsTo('App\Models\MapCompanyContact','contactId', 'id');
 
     }
 

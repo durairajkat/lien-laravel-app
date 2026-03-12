@@ -19,6 +19,28 @@ class ProjectViewResource extends JsonResource
     public function toArray($request)
     {
         info('ProjectViewResource', ['project' => $this->project_date]);
+        $contact = $this->customer_contract?->getContacts?->first();
+
+        $industryContacts = $this->industryContacts
+            ->map(function ($map) {
+                $contact = $map->fetchMap;
+
+                return [
+                    'id' => $contact?->id,
+                    'contact_name' => $contact?->contacts->first_name. ' '. $contact?->contacts->last_name,
+                    'address' => $contact?->address,
+                    'title' => $contact?->contacts->title ?? null,
+                    'company' => $contact?->company,
+                    'city' => $contact?->city,
+                    'state_id' => $contact?->state_id,
+                    'zip' => $contact?->zip,
+                    'phone' => $contact?->contacts->phone,
+                    'email' => $contact?->contacts->email,
+                    'contact_type' => $contact?->contacts->contact_type
+                ];
+            })
+            ->filter();
+
         return [
             'id' => $this->id,
             'projectName' => $this->project_name,
@@ -27,6 +49,9 @@ class ProjectViewResource extends JsonResource
             'stateId' => $this->state_id,
             'countryId' => $this->state?->country_id,
             'countyId' => $this->county_id,
+            'customer_name' => $contact->first_name ?? null . ' ' . $contact->last_name ?? null,
+            'customerContacts' =>  $this->customer_contract,
+            'industryContacts' => $industryContacts,
             'projectTypeId' => $this->project_type_id,
             'customerTypeId' =>  $this->customer_id,
             'roleId' => $this->role_id,
@@ -80,7 +105,7 @@ class ProjectViewResource extends JsonResource
                     return [$item->date_id => $item->date_value];
                 })
             ),
-             
+
         ];
     }
 }
