@@ -11,6 +11,8 @@ use App\Http\Controllers\Api\V1\AiFileReaderController;
 use App\Http\Controllers\Api\V1\CompanyController;
 use App\Http\Controllers\Api\V1\DocumentApiController;
 use App\Http\Controllers\Api\V1\Lien\LienAuthController;
+use App\Http\Controllers\Api\V1\Lien\LienContractCalculationController;
+use App\Http\Controllers\Api\V1\Lien\LienProjectsController;
 use App\Http\Controllers\Api\V1\master\ContactRoleController;
 use App\Http\Controllers\Api\V1\master\CountryApiController;
 use App\Http\Controllers\Api\V1\master\CountyApiCountroller;
@@ -49,7 +51,8 @@ Route::post('/forgot-password', [PasswordController::class, 'forgot']);
 Route::post('/reset-password', [PasswordController::class, 'reset']);
 Route::get('/states/all', [StateApiController::class, 'getAllStates']);
 Route::get('/companies', [CompanyController::class, 'index']);
-
+/** attorney */
+Route::post('/attorney/signup', [LienAuthController::class, 'signup']);
 
 Route::group(['middleware' => 'auth:sanctum'], function () {
     //profile routes
@@ -109,6 +112,7 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     /** Deadlines */
     Route::get('/deadlines', [DeadlineApiController::class, 'getAllDeadlines']);
     Route::post('logout', [AuthController::class, 'logout'])->name('api.logout');
+    /** attorney */
+    Route::get('attorney/projects', [LienProjectsController::class, 'index']);
+    Route::get('attorney/total-contracts', [LienContractCalculationController::class, 'contractTotal']);
 });
-/** attorney */
-Route::post('/attorney/signup', [LienAuthController::class, 'signup']);

@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\Hash;
 
 class LienCreationService
 {
-    public function lienUserAdd($request, $fileName = null)
+    public function lienUserAdd($request)
     {
-         return DB::transaction(function () use ($request, $fileName) {
+        return DB::transaction(function () use ($request) {
 
             $userName = ($request->firstName ?? '') . ' ' . ($request->lastName ?? '');
 
@@ -40,27 +40,47 @@ class LienCreationService
                 $roleName = $request->role_other;
             }
 
+            $logoPath = null;
+
+            /**
+             * Upload member image
+             */
+            if ($request->hasFile('profileImage')) {
+
+                $file = $request->file('profileImage');
+
+                $random = rand(10000, 99999);
+                $extension = $file->getClientOriginalExtension();
+
+                $fileName = 'lien_logo _' . $random . '.' . $extension;
+                $logoPath = $file->storeAs('lien_provider', $fileName, 'public');
+            }
+
+            $data = [
+                'company_id' => $request->companyId,
+                'company' => $request->newCompanyName,
+                'role_name' => $roleName,
+                'companyPhone' => $request->companyPhone,
+                'firstName' => $request->firstName,
+                'lastName' => $request->lastName,
+                'address' => $request->address,
+                'city' => $request->city,
+                'stateId' => $request->states[0] ?? null,
+                'zip' => $request->zip,
+                'phone' => $request->phone,
+                'fax' => $request->fax,
+                'email' => $request->email,
+            ];
+            if ($logoPath) {
+                $data['logo'] = $logoPath;
+            }
+
             /**
              * Create or update Lien Provider
              */
             $lienProvider = LienProvider::updateOrCreate(
                 ['user_id' => $user->id],
-                [
-                    'company_id' => $request->companyId,
-                    'company' => $request->newCompanyName,
-                    'role_name' => $roleName,
-                    'companyPhone' => $request->companyPhone,
-                    'firstName' => $request->firstName,
-                    'lastName' => $request->lastName,
-                    'address' => $request->address,
-                    'city' => $request->city,
-                    'stateId' => $request->states[0] ?? null,
-                    'zip' => $request->zip,
-                    'phone' => $request->phone,
-                    'fax' => $request->fax,
-                    'email' => $request->email,
-                    'logo' => $fileName
-                ]
+                $data
             );
 
             /**
