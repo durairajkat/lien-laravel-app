@@ -52,7 +52,7 @@ class LienCreationService
                 $random = rand(10000, 99999);
                 $extension = $file->getClientOriginalExtension();
 
-                $fileName = 'lien_logo _' . $random . '.' . $extension;
+                $fileName = 'lien_logo_' . $random . '.' . $extension;
                 $logoPath = $file->storeAs('lien_provider', $fileName, 'public');
             }
 
