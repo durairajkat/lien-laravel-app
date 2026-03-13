@@ -24,6 +24,6 @@ class LienProviderStates extends Model
 
     public function state()
     {
-        return $this->hasMany('App\Models\State', 'id', 'state_id');
+        return $this->hasOne('App\Models\State', 'id', 'state_id');
     }
 }

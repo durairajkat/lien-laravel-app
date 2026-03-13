@@ -46,7 +46,7 @@ class ProfileResource extends JsonResource
                     'zip'      => $this->company->zip,
                 ];
             }),
-            'lien' => $this->lienUser
+            'lien' => $this->lienUser,
         ];
     }
 }

@@ -31,7 +31,7 @@ class ProfileController extends Controller
     {
         $user = Auth::user()
             ->refresh()
-            ->load(['details', 'company', 'lienUser']);
+            ->load(['details', 'company', 'lienUser', 'lienUser.states.state']);
 
         return new ProfileResource($user);
     }
