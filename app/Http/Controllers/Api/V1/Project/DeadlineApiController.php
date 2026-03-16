@@ -207,6 +207,7 @@ class DeadlineApiController extends Controller
         ];
 
         $finalData = [];
+        $projectId = $request->projectId ?? '';
 
         /**
          * Get all projects
@@ -219,7 +220,9 @@ class DeadlineApiController extends Controller
             'customer_id',
             'answer1',
             'project_name'
-        )->where('user_id', auth()->id())->get();
+        )->when(!empty($projectId), function ($query) use ($projectId) {
+            $query->where('id', $projectId);
+        })->where('user_id', auth()->id())->get();
 
         /**
          * Tier tables
