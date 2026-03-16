@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LienSignupRequest;
 use App\Http\Resources\UserResource;
 use App\Services\Lien\LienCreationService;
+use Illuminate\Http\Request;
 
 class LienAuthController extends Controller
 {
@@ -24,6 +25,16 @@ class LienAuthController extends Controller
             'message' => 'Registration successful.',
             'user'    => new UserResource($userInfo),
             'token'   => $token,
+        ], 201);
+    }
+
+    public function updateProfile(Request $request)
+    {
+        $userInfo = $this->lien_creation_service->lienUserAdd($request);
+        return response()->json([
+            'message' => 'Registration successful.',
+            'user'    => new UserResource($userInfo),
+            'status' => true
         ], 201);
     }
 }

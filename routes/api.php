@@ -115,4 +115,5 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     /** attorney */
     Route::get('attorney/projects', [LienProjectsController::class, 'index']);
     Route::get('attorney/total-contracts', [LienContractCalculationController::class, 'contractTotal']);
+    Route::post('attorney/profile/update', [LienAuthController::class, 'updateProfile']);
 });

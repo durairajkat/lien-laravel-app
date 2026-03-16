@@ -14,22 +14,29 @@ class LienCreationService
     public function lienUserAdd($request)
     {
         return DB::transaction(function () use ($request) {
-
+            $userId = $request->userId;
             $userName = ($request->firstName ?? '') . ' ' . ($request->lastName ?? '');
 
             /**
              * Create or update user
              */
-            $user = User::updateOrCreate(
-                ['email' => $request->email],
-                [
-                    'name' => $userName,
-                    'user_name' => $userName,
-                    'password' => Hash::make($request->password),
-                    'role' => 7,
-                    'status' => '0',
-                ]
-            );
+            if ($userId) {
+                $user = User::findOrFail($userId);
+            } else {
+                $user = new User();
+            }
+
+            $user->name = $userName;
+            $user->user_name = $userName;
+            $user->role = 7;
+            $user->status = '0';
+            $user->user_name = $userName;
+            if (!empty($request->password)) {
+                $user->password = Hash::make($request->password);
+            }
+
+            $user->save();
+
 
             /**
              * Role name handling
@@ -101,19 +108,24 @@ class LienCreationService
             /**
              * Create or update user details
              */
+            $userDetailsIns = [
+                'company' => $request->newCompanyName,
+                'company_id' => $request->companyId,
+                'first_name' => $request->firstName,
+                'last_name' => $request->lastName,
+                'address' => $request->address,
+                'city' => $request->city,
+                'state_id' => $request->states[0] ?? null,
+                'zip' => $request->zip,
+                'phone' => $request->phone,
+            ];
+
+            if ($logoPath) {
+                $userDetailsIns['image'] = $logoPath;
+            }
             UserDetails::updateOrCreate(
                 ['user_id' => $user->id],
-                [
-                    'company' => $request->newCompanyName,
-                    'company_id' => $request->companyId,
-                    'first_name' => $request->firstName,
-                    'last_name' => $request->lastName,
-                    'address' => $request->address,
-                    'city' => $request->city,
-                    'state_id' => $request->states[0] ?? null,
-                    'zip' => $request->zip,
-                    'phone' => $request->phone,
-                ]
+                $userDetailsIns
             );
 
             return $user;
