@@ -28,6 +28,7 @@ class LienCreationService
 
             $user->name = $userName;
             $user->user_name = $userName;
+            $user->email = $request->email;
             $user->role = 7;
             $user->status = '0';
             $user->user_name = $userName;

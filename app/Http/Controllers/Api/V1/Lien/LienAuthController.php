@@ -32,7 +32,7 @@ class LienAuthController extends Controller
     {
         $userInfo = $this->lien_creation_service->lienUserAdd($request);
         return response()->json([
-            'message' => 'Registration successful.',
+            'message' => 'Update Profile successful.',
             'user'    => new UserResource($userInfo),
             'status' => true
         ], 201);
